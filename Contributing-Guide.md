@@ -45,10 +45,6 @@ Typos are embarrassing! We will accept most PRs that fix typos. In order to make
 ###Style
 We strive to ensure that our standards, guidelines and recipes conform to a consistent style.  Therefore, please use the appropriate [template](/templates) as your starting point when creating a new document.
 
-* **DO NOT** send PRs for style changes.
-* **DO** follow the [Style Guide](Style-Guide) when making changes to existing documents, correcting any areas where the document does not currently follow the guide.
-* **DO** follow the [Style Guide](Style-Guide) when adding new documents
-
 Commit Messages
 ---------------
 
