@@ -1,0 +1,47 @@
+<svg xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" width="250"
+    height="220.04865" id="complete-svg" version="1.1">
+    <defs id="complete-defs">
+        <linearGradient id="linearGradient3855">
+            <stop style="stop-color:#ffffff;stop-opacity:1;"
+                offset="0" id="stop3857"/>
+            <stop
+                style="stop-color:#dcdcdc;stop-opacity:0.32478634;"
+                offset="1" id="stop3859"/>
+        </linearGradient>
+        <linearGradient id="linearGradient3847">
+            <stop style="stop-color:#ffffff;stop-opacity:1;"
+                offset="0" id="stop3849"/>
+            <stop style="stop-color:#aaaaaa;stop-opacity:1;"
+                offset="1" id="stop3851"/>
+        </linearGradient>
+        <linearGradient xlink:href="#linearGradient3847"
+            id="linearGradient6405" gradientUnits="userSpaceOnUse"
+            gradientTransform="matrix(0.49978951,0,0,0.49978951,-13.694195,-14.881485)"
+            x1="292.5" y1="85.862183" x2="338.5" y2="85.862183"/>
+        <radialGradient xlink:href="#linearGradient3855"
+            id="radialGradient6408" gradientUnits="userSpaceOnUse"
+            gradientTransform="matrix(0.49978951,0,0,0.85009454,-24.344716,-85.097169)"
+            cx="214" cy="243.36218" fx="214" fy="243.36218"
+            r="124.5"/>
+    </defs>
+    <g id="layer1" transform="translate(2.36366,6.713731)">
+        <path
+            style="fill:url(#radialGradient6408);stroke:#000000;stroke-width:2px"
+            d="M 21.13613,16.821607 20.63634,174.01775 156.73466,174.59332 156.52251,40.150699 133.31984,16.574333 z"
+            id="path3073"/>
+        <path
+            style="fill:url(#linearGradient6405);stroke:#000000;stroke-width:2px;"
+            d="m 133.24392,16.786269 -0.49979,21.990737 22.49053,0.49979 z"
+            id="path3075"/>
+        <g id="complete-xml" class="xml-src" transform="translate(30, 50)">
+            <text xml:space="preserve" x="0" y="0">&lt;feed&gt;</text>
+            <text xml:space="preserve" x="0" y="20">  &lt;link rel="self"</text>
+            <text xml:space="preserve" x="0" y="40">       href="..."/&gt;</text>
+            <text xml:space="preserve" x="0" y="60" class="purl">  &lt;fh:complete/&gt;</text>
+            <text xml:space="preserve" x="0" y="80">&lt;/feed&gt;</text>
+        </g>
+        <text xml:space="preserve" x="20.527962" y="188.96284" class="example-url">http://example.com/feed.atom</text>
+    </g>
+</svg>

@@ -1,0 +1,136 @@
+<svg xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" width="564.91028"
+    height="269.5715" id="paged-svg" version="1.1">
+    <defs id="paged-defs">
+        <marker orient="auto" refY="0" refX="0" id="Arrow1Mend"
+            style="overflow:visible">
+            <path id="path4031" d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+                style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+                transform="matrix(-0.4,0,0,-0.4,-4,0)"/>
+        </marker>
+        <linearGradient id="linearGradient3855">
+            <stop style="stop-color:#ffffff;stop-opacity:1;"
+                offset="0" id="stop3857"/>
+            <stop
+                style="stop-color:#dcdcdc;stop-opacity:0.32478634;"
+                offset="1" id="stop3859"/>
+        </linearGradient>
+        <linearGradient id="linearGradient3847">
+            <stop style="stop-color:#ffffff;stop-opacity:1;"
+                offset="0" id="stop3849"/>
+            <stop style="stop-color:#aaaaaa;stop-opacity:1;"
+                offset="1" id="stop3851"/>
+        </linearGradient>
+        <linearGradient xlink:href="#linearGradient3847"
+            id="linearGradient6405" gradientUnits="userSpaceOnUse"
+            gradientTransform="matrix(0.49978951,0,0,0.49978951,-13.694195,-14.881485)"
+            x1="292.5" y1="85.862183" x2="338.5" y2="85.862183"/>
+        <radialGradient xlink:href="#linearGradient3855"
+            id="radialGradient6408" gradientUnits="userSpaceOnUse"
+            gradientTransform="matrix(0.49978951,0,0,0.85009454,-24.344716,-85.097169)"
+            cx="214" cy="243.36218" fx="214" fy="243.36218"
+            r="124.5"/>
+        <radialGradient xlink:href="#linearGradient3855"
+            id="radialGradient6480" gradientUnits="userSpaceOnUse"
+            gradientTransform="matrix(0.49978951,0,0,0.85009454,155.65528,-84.097169)"
+            cx="214" cy="243.36218" fx="214" fy="243.36218"
+            r="124.5"/>
+        <linearGradient xlink:href="#linearGradient3847"
+            id="linearGradient6482" gradientUnits="userSpaceOnUse"
+            gradientTransform="matrix(0.49978951,0,0,0.49978951,166.30581,-13.881485)"
+            x1="292.5" y1="85.862183" x2="338.5" y2="85.862183"/>
+        <radialGradient xlink:href="#linearGradient3855"
+            id="radialGradient6520" gradientUnits="userSpaceOnUse"
+            gradientTransform="matrix(0.49978951,0,0,0.84469511,335.65528,-82.951398)"
+            cx="214" cy="243.36218" fx="214" fy="243.36218"
+            r="124.5"/>
+        <linearGradient xlink:href="#linearGradient3847"
+            id="linearGradient6522" gradientUnits="userSpaceOnUse"
+            gradientTransform="matrix(0.49978951,0,0,0.49978951,346.30581,-13.381485)"
+            x1="292.5" y1="85.862183" x2="338.5" y2="85.862183"/>
+    </defs>
+    <g id="layer1" transform="translate(2.36366,48.236578)">
+        <path
+            style="fill:url(#radialGradient6408);fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+            d="M 21.13613,16.821607 20.63634,174.01775 156.73466,174.59332 156.52251,40.150699 133.31984,16.574333 z"
+            id="path3073"/>
+        <path
+            style="fill:url(#linearGradient6405);fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+            d="m 133.24392,16.786269 -0.49979,21.990737 22.49053,0.49979 z"
+            id="path3075"/>
+        <g id="page-1-xml" class="xml-src" transform="translate(30, 40)">
+            <text xml:space="preserve" x="0" y="0">&lt;feed&gt;</text>
+            <text xml:space="preserve" x="0" y="15">  &lt;link rel="self"</text>
+            <text xml:space="preserve" x="0" y="30">       href="..."/&gt;</text>
+            <text xml:space="preserve" x="0" y="45" class="next">  &lt;link rel="next"</text>
+            <text xml:space="preserve" x="0" y="60" class="next">      href="...?page=2"/&gt;</text>
+            <text xml:space="preserve" x="0" y="75" class="last">  &lt;link rel="last"</text>
+            <text xml:space="preserve" x="0" y="90" class="last">      href="...?page=7"/&gt;</text>
+            <text xml:space="preserve" x="0" y="105">&lt;/feed&gt;</text>
+        </g>
+        <path id="path6444"
+            d="M 201.13613,17.821607 200.63634,175.01775 335.23466,174.59332 335.52251,40.650699 313.31984,17.574333 z"
+            style="fill:url(#radialGradient6480);fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
+        <path id="path6446"
+            d="m 313.24392,17.786269 -0.49979,21.990737 22.49053,0.49979 z"
+            style="fill:url(#linearGradient6482);fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"/>
+        <g id="page-2-xml" class="xml-src" transform="translate(205, 35)">
+            <text xml:space="preserve" x="0" y="0">&lt;feed&gt;</text>
+            <text xml:space="preserve" x="0" y="15">  &lt;link rel="self"</text>
+            <text xml:space="preserve" x="0" y="30">       href="..."/&gt;</text>
+            <text xml:space="preserve" x="0" y="45" class="first">  &lt;link rel="first"</text>
+            <text xml:space="preserve" x="0" y="60" class="first">      href="..."/&gt;</text>
+            <text xml:space="preserve" x="0" y="75" class="next">  &lt;link rel="next"</text>
+            <text xml:space="preserve" x="0" y="90" class="next">      href="...?page=2"/&gt;</text>
+            <text xml:space="preserve" x="0" y="105" class="last">  &lt;link rel="last"</text>
+            <text xml:space="preserve" x="0" y="120" class="last">      href="...?page=7"/&gt;</text>
+            <text xml:space="preserve" x="0" y="135">&lt;/feed&gt;</text>
+        </g>
+        <path
+            style="fill:url(#radialGradient6520);fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+            d="M 381.13613,18.320035 380.63634,174.51773 515.23466,174.096 515.52251,40.981896 493.31984,18.074331 z"
+            id="path6484"/>
+        <path
+            style="fill:url(#linearGradient6522);fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+            d="m 493.24392,18.286269 -0.49979,21.990737 22.49053,0.49979 z"
+            id="path6486"/>
+        <g id="page-3-xml" class="xml-src" transform="translate(385, 33)">
+            <text xml:space="preserve" x="0" y="0">&lt;feed&gt;</text>
+            <text xml:space="preserve" x="0" y="12">  &lt;link rel="self"</text>
+            <text xml:space="preserve" x="0" y="24">       href="..."/&gt;</text>
+            <text xml:space="preserve" x="0" y="36" class="first">  &lt;link rel="first"</text>
+            <text xml:space="preserve" x="0" y="48" class="first">      href="..."/&gt;</text>
+            <text xml:space="preserve" x="0" y="60" class="prev">  &lt;link rel="prev"</text>
+            <text xml:space="preserve" x="0" y="72" class="prev">      href="...?page=2"/&gt;</text>
+            <text xml:space="preserve" x="0" y="84" class="next">  &lt;link rel="next"</text>
+            <text xml:space="preserve" x="0" y="96" class="next">      href="...?page=4"/&gt;</text>
+            <text xml:space="preserve" x="0" y="108" class="last">  &lt;link rel="last"</text>
+            <text xml:space="preserve" x="0" y="120" class="last">      href="...?page=7"/&gt;</text>
+            <text xml:space="preserve" x="0" y="132">&lt;/feed&gt;</text>
+        </g>
+        <path
+            style="fill:none;stroke:#008000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+            d="m 155,106.57642 c 3.80686,-25.525934 14.18683,-48.751279 44.5,-65.000004"
+            id="path6684" transform="translate(-2.113555,-6.21352)"/>
+        <path
+            style="fill:none;stroke:#0000ff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+            d="m 312,89.576416 c 36.22288,-82.686728 -74.98972,-90.7650945 -160.5,-59.5"
+            id="path6686" transform="translate(-2.113555,-6.21352)"/>
+        <path
+            style="fill:none;stroke:#008000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+            d="m 335,110.57642 c 6.76749,-32.609733 26.09383,-56.954723 44.5,-76.500004"
+            id="path6688" transform="translate(-2.113555,-6.21352)"/>
+        <path
+            style="fill:none;stroke:#0000ff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+            d="m 395,72.076416 c 1.23975,-160.843038 -239.61007,-59.956295 -255.5,-53"
+            id="path6690" transform="translate(-2.113555,-6.21352)"/>
+        <path
+            style="fill:none;stroke:#b00000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+            d="M 398,94.57642 C 349.10751,62.518461 366.15987,17.035318 327,28.076416"
+            id="path6692" transform="translate(-2.113555,-6.21352)"/>
+        <text xml:space="preserve" x="20.527962" y="188.96284" class="example-url">http://example.com/feed.atom</text>
+        <text xml:space="preserve" x="180.62151" y="210" class="example-url">http://example.com/feed.atom?page=2</text>
+        <text xml:space="preserve" x="355" y="188.96284" class="example-url">http://example.com/feed.atom?page=3</text>
+    </g>
+</svg>
