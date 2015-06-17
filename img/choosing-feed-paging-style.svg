@@ -1,0 +1,121 @@
+<svg width="490px" height="690px" viewBox="-1 -1 528 709"
+    xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="StartGradient" y2="100%">
+            <stop offset="5%" stop-color="#cfe7fa"/>
+            <stop offset="100%" stop-color="#6393c1"/>
+        </linearGradient>
+        <linearGradient id="EndGradient" y2="100%">
+            <stop offset="5%" stop-color="#c9de96"/>
+            <stop offset="95%" stop-color="#398235"/>
+        </linearGradient>
+        <linearGradient id="QuestionGradient" y2="100%">
+            <stop offset="5%" stop-color="#eee"/>
+            <stop offset="95%" stop-color="#ccc"/>
+        </linearGradient>
+    </defs>
+    <g id="graph0" class="graph">
+        <g id="node1" class="node">
+            <ellipse cx="143" cy="22" rx="28" ry="18"
+                fill="url(#StartGradient)" style="stroke:black;"/>
+            <text text-anchor="middle" x="143" y="27">Start</text>
+        </g>
+        <g id="node3" class="node">
+            <polygon fill="url(#QuestionGradient)" style="stroke:black;"
+                points="143,78 34,150 143,222 252,150 143,78"/>
+            <text text-anchor="middle" x="143" y="131">Will there</text>
+            <text text-anchor="middle" x="143" y="147">ever be more than
+                a</text>
+            <text text-anchor="middle" x="143" y="163">small total
+                number</text>
+            <text text-anchor="middle" x="143" y="179">of
+                entries?</text>
+        </g>
+        <g id="edge2" class="edge">
+            <path style="fill:none;stroke:black;"
+                d="M143,40C143,48 143,57 143,68"/>
+            <polygon style="fill:black;stroke:black;"
+                points="147,68 143,78 140,68 147,68"/>
+        </g>
+        <g id="node5" class="node">
+            <ellipse cx="78" cy="330" rx="72" ry="18"
+                fill="url(#EndGradient)" style="stroke:black;"/>
+            <text text-anchor="middle" x="78" y="335">Complete Atom
+                Feed</text>
+        </g>
+        <g id="edge4" class="edge">
+            <path style="fill:none;stroke:black;"
+                d="M122,208C111,240 97,277 88,302"/>
+            <polygon style="fill:black;stroke:black;"
+                points="91,303 85,312 85,301 91,303"/>
+            <text text-anchor="middle" x="120" y="253">No</text>
+        </g>
+        <g id="node7" class="node">
+            <polygon fill="url(#QuestionGradient)" style="stroke:black;"
+                points="285,274 170,330 285,386 400,330 285,274"/>
+            <text text-anchor="middle" x="285" y="319">Will older</text>
+            <text text-anchor="middle" x="285" y="335">items ever be
+                changed</text>
+            <text text-anchor="middle" x="285" y="351">or
+                deleted?</text>
+        </g>
+        <g id="edge6" class="edge">
+            <path style="fill:none;stroke:black;"
+                d="M181,198C201,223 226,255 247,281"/>
+            <polygon style="fill:black;stroke:black;"
+                points="250,279 253,289 244,283 250,279"/>
+            <text text-anchor="middle" x="234" y="253">Yes</text>
+        </g>
+        <g id="node9" class="node">
+            <ellipse cx="264" cy="684" rx="44" ry="18"
+                fill="url(#EndGradient)" style="stroke:black;"/>
+            <text text-anchor="middle" x="264" y="689">Paged Feed</text>
+        </g>
+        <g id="edge8" class="edge">
+            <path style="fill:none;stroke:black;"
+                d="M262,375C253,394 245,417 241,438 225,515 228,537 241,614 243,629 248,644 253,657"/>
+            <polygon style="fill:black;stroke:black;"
+                points="256,655 256,666 250,658 256,655"/>
+            <text text-anchor="middle" x="251" y="531">Yes</text>
+        </g>
+        <g id="node11" class="node">
+            <polygon fill="url(#QuestionGradient)" style="stroke:black;"
+                points="396,438 271,526 396,614 521,526 396,438"/>
+            <text text-anchor="middle" x="396" y="499">Will
+                clients</text>
+            <text text-anchor="middle" x="396" y="515">need to access
+                historic</text>
+            <text text-anchor="middle" x="396" y="531">entries and
+                expect that</text>
+            <text text-anchor="middle" x="396" y="547">pages do not
+                change</text>
+            <text text-anchor="middle" x="396" y="563">over time?</text>
+        </g>
+        <g id="edge10" class="edge">
+            <path style="fill:none;stroke:black;"
+                d="M310,374C323,397 340,427 355,454"/>
+            <polygon style="fill:black;stroke:black;"
+                points="358,453 360,463 352,456 358,453"/>
+            <text text-anchor="middle" x="341" y="417">No</text>
+        </g>
+        <g id="edge12" class="edge">
+            <path style="fill:none;stroke:black;"
+                d="M349,582C327,608 302,638 284,659"/>
+            <polygon style="fill:black;stroke:black;"
+                points="287,661 278,667 281,657 287,661"/>
+            <text text-anchor="middle" x="315" y="645">No</text>
+        </g>
+        <g id="node14" class="node">
+            <ellipse cx="396" cy="684" rx="37" ry="18"
+                fill="url(#EndGradient)" style="stroke:black;"/>
+            <text text-anchor="middle" x="396" y="689">Archived</text>
+        </g>
+        <g id="edge14" class="edge">
+            <path style="fill:none;stroke:black;"
+                d="M396,614C396,629 396,644 396,656"/>
+            <polygon style="fill:black;stroke:black;"
+                points="400,656 396,666 393,656 400,656"/>
+            <text text-anchor="middle" x="406" y="645">Yes</text>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="604.17407"
+   height="235.52664"
+   id="archived-svg"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="archive-feed.svg">
+  <metadata
+     id="metadata93">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview91"
+     showgrid="false"
+     fit-margin-top="5"
+     fit-margin-left="5"
+     fit-margin-right="5"
+     fit-margin-bottom="5"
+     inkscape:zoom="0.53885119"
+     inkscape:cx="270.15057"
+     inkscape:cy="118.0753"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="archived-svg" />
+  <defs
+     id="arch-defs">
+    <marker
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend"
+       style="overflow:visible">
+      <path
+         id="path4031"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <linearGradient
+       id="linearGradient3855">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop3857" />
+      <stop
+         style="stop-color:#dcdcdc;stop-opacity:0.32478634;"
+         offset="1"
+         id="stop3859" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3847">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop3849" />
+      <stop
+         style="stop-color:#aaaaaa;stop-opacity:1;"
+         offset="1"
+         id="stop3851" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient3847"
+       id="linearGradient6405"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.49978951,0,0,0.49978951,-13.694195,-14.881485)"
+       x1="292.5"
+       y1="85.862183"
+       x2="338.5"
+       y2="85.862183" />
+    <radialGradient
+       xlink:href="#linearGradient3855"
+       id="radialGradient6408"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.49978951,0,0,0.85009454,-24.344716,-85.097169)"
+       cx="214"
+       cy="243.36218"
+       fx="214"
+       fy="243.36218"
+       r="124.5" />
+    <radialGradient
+       xlink:href="#linearGradient3855"
+       id="radialGradient6480"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.49978951,0,0,0.85009454,155.65528,-84.097169)"
+       cx="214"
+       cy="243.36218"
+       fx="214"
+       fy="243.36218"
+       r="124.5" />
+    <linearGradient
+       xlink:href="#linearGradient3847"
+       id="linearGradient6482"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.49978951,0,0,0.49978951,166.30581,-13.881485)"
+       x1="292.5"
+       y1="85.862183"
+       x2="338.5"
+       y2="85.862183" />
+    <radialGradient
+       xlink:href="#linearGradient3855"
+       id="radialGradient6520"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.49978951,0,0,0.84469511,335.65528,-82.951398)"
+       cx="214"
+       cy="243.36218"
+       fx="214"
+       fy="243.36218"
+       r="124.5" />
+    <linearGradient
+       xlink:href="#linearGradient3847"
+       id="linearGradient6522"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.49978951,0,0,0.49978951,346.30581,-13.381485)"
+       x1="292.5"
+       y1="85.862183"
+       x2="338.5"
+       y2="85.862183" />
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-15.134755,19.067705)">
+    <path
+       style="fill:url(#radialGradient6408);fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 21.13613,16.821607 20.63634,174.01775 156.73466,174.59332 156.52251,40.150699 133.31984,16.574333 Z"
+       id="path3073"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:url(#linearGradient6405);fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 133.24392,16.786269 -0.49979,21.990737 22.49053,0.49979 z"
+       id="path3075"
+       inkscape:connector-curvature="0" />
+    <g
+       id="arch-1-xml"
+       class="xml-src"
+       transform="translate(28,50)">
+      <text
+         xml:space="preserve"
+         x="0"
+         y="0"
+         id="text22">&lt;feed&gt;</text>
+      <text
+         xml:space="preserve"
+         x="0"
+         y="15"
+         id="text24">  &lt;link rel=&quot;self&quot;</text>
+      <text
+         xml:space="preserve"
+         x="0"
+         y="30"
+         id="text26">       href=&quot;...&quot;/&gt;</text>
+      <text
+         xml:space="preserve"
+         x="0"
+         y="45"
+         class="prev-arch"
+         id="text28">  &lt;link rel=&quot;prev-archive&quot;</text>
+      <text
+         xml:space="preserve"
+         x="0"
+         y="60"
+         class="prev-arch"
+         id="text30">      href=&quot;...&quot;/&gt;</text>
+      <text
+         xml:space="preserve"
+         x="0"
+         y="75"
+         id="text32">&lt;/feed&gt;</text>
+    </g>
+    <path
+       id="path6444"
+       d="M 201.13613,17.821607 200.63634,175.01775 335.23466,174.59332 335.52251,40.650699 313.31984,17.574333 Z"
+       style="fill:url(#radialGradient6480);fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path6446"
+       d="m 313.24392,17.786269 -0.49979,21.990737 22.49053,0.49979 z"
+       style="fill:url(#linearGradient6482);fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:connector-curvature="0" />
+    <g
+       id="arch-2-xml"
+       class="xml-src"
+       transform="translate(205,35)">
+      <text
+         xml:space="preserve"
+         x="0"
+         y="0"
+         id="text37">&lt;feed&gt;</text>
+      <text
+         xml:space="preserve"
+         x="0"
+         y="15"
+         id="text39">  &lt;link rel=&quot;self&quot;</text>
+      <text
+         xml:space="preserve"
+         x="0"
+         y="30"
+         id="text41">       href=&quot;...&quot;/&gt;</text>
+      <text
+         xml:space="preserve"
+         x="0"
+         y="45"
+         class="purl"
+         id="text43">  &lt;fh:archive&gt;</text>
+      <text
+         xml:space="preserve"
+         x="0"
+         y="60"
+         class="current"
+         id="text45">  &lt;link rel=&quot;current&quot;</text>
+      <text
+         xml:space="preserve"
+         x="0"
+         y="75"
+         class="current"
+         id="text47">      href=&quot;...&quot;/&gt;</text>
+      <text
+         xml:space="preserve"
+         x="0"
+         y="90"
+         class="prev-arch"
+         id="text49">  &lt;link rel=&quot;prev-archive&quot;</text>
+      <text
+         xml:space="preserve"
+         x="0"
+         y="105"
+         class="prev-arch"
+         id="text51">      href=&quot;...&quot;/&gt;</text>
+      <text
+         xml:space="preserve"
+         x="0"
+         y="120"
+         id="text53">&lt;/feed&gt;</text>
+    </g>
+    <path
+       style="fill:url(#radialGradient6520);fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 381.13613,18.320035 380.63634,174.51773 515.23466,174.096 515.52251,40.981896 493.31984,18.074331 Z"
+       id="path6484"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:url(#linearGradient6522);fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 493.24392,18.286269 -0.49979,21.990737 22.49053,0.49979 z"
+       id="path6486"
+       inkscape:connector-curvature="0" />
+    <g
+       id="arch-3-xml"
+       class="xml-src"
+       transform="translate(385,40)">
+      <text
+         xml:space="preserve"
+         x="0"
+         y="0"
+         id="text58">&lt;feed&gt;</text>
+      <text
+         xml:space="preserve"
+         x="0"
+         y="12"
+         id="text60">  &lt;link rel=&quot;self&quot;</text>
+      <text
+         xml:space="preserve"
+         x="0"
+         y="24"
+         id="text62">       href=&quot;...&quot;/&gt;</text>
+      <text
+         xml:space="preserve"
+         x="0"
+         y="36"
+         class="purl"
+         id="text64">  &lt;fh:archive&gt;</text>
+      <text
+         xml:space="preserve"
+         x="0"
+         y="48"
+         class="current"
+         id="text66">  &lt;link rel=&quot;current&quot;</text>
+      <text
+         xml:space="preserve"
+         x="0"
+         y="60"
+         class="current"
+         id="text68">      href=&quot;...&quot;/&gt;</text>
+      <text
+         xml:space="preserve"
+         x="0"
+         y="72"
+         class="next-arch"
+         id="text70">  &lt;link rel=&quot;next-archive&quot;</text>
+      <text
+         xml:space="preserve"
+         x="0"
+         y="84"
+         class="next-arch"
+         id="text72">      href=&quot;...&quot;/&gt;</text>
+      <text
+         xml:space="preserve"
+         x="0"
+         y="96"
+         class="prev-arch"
+         id="text74">  &lt;link rel=&quot;prev-archive&quot;</text>
+      <text
+         xml:space="preserve"
+         x="0"
+         y="108"
+         class="prev-arch"
+         id="text76">      href=&quot;...&quot;/&gt;</text>
+      <text
+         xml:space="preserve"
+         x="0"
+         y="120"
+         id="text78">&lt;/feed&gt;</text>
+    </g>
+    <path
+       style="fill:none;stroke:#008000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="M 153.68587,94.749241 C 173.91937,82.364617 169.18683,57.825141 199.5,41.576416"
+       id="path6684"
+       transform="translate(-2.113555,-6.21352)"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="M 308.05761,98.775333 C 344.28049,16.088605 237.01028,-1.1886785 151.5,30.076416"
+       id="path6686"
+       transform="translate(-2.113555,-6.21352)"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#008000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="m 334.34293,117.80414 c 27.79359,-16.1831 11.6384,-44.470479 44.5,-68.615218"
+       id="path6688"
+       transform="translate(-2.113555,-6.21352)"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="M 489.61743,93.102512 C 490.85718,-67.740526 155.38993,12.120121 139.5,19.076416"
+       id="path6690"
+       transform="translate(-2.113555,-6.21352)"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#b00000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="M 388.80108,108.3748 C 333.33794,77.630967 366.15987,17.035318 327,28.076416"
+       id="path6692"
+       transform="translate(-2.113555,-6.21352)"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       x="20.527962"
+       y="188.96284"
+       class="example-url"
+       id="text85">http://example.com/feed.atom</text>
+    <text
+       xml:space="preserve"
+       x="174.62151"
+       y="208.96284"
+       class="example-url"
+       id="text87">http://example.com/feed/2011/04/05.atom</text>
+    <text
+       xml:space="preserve"
+       x="358.59985"
+       y="190.96284"
+       class="example-url"
+       id="text89">http://example.com/feed/2011/04/04.atom</text>
+  </g>
+</svg>
