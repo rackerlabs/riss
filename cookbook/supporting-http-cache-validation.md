@@ -22,30 +22,18 @@ See the following list for HTTP headers related to conditional GETs and their ap
 
 *HTTP headers for conditional GETs*
 
-HTTP Header
-Request or Response
-Applicability
-Last-Modified
-Response
-The Last-Modified response header indicates the date and time at which the origin server believes the resource was last modified.
-ETag
-Response
-An entity tag, or ETag is a value used by the origin server to uniquely identify a version of a resource representation. It is normally a strong validator since its value can be changed every time the server modifies the representation.
-If-Modified-Since
-Request
-The If-Modified-Since request header is used with a method to make it conditional: if the requested resource
-has not been modified since the time specified in this field, an entity will not be returned from the server;
-instead, a 304 (not modified) response will be returned without any message-body. The purpose of this feature is to
-allow efficient updates of cached information with a minimum amount of transaction overhead.
-If-None-Match
-Request
-The If-None-Match request header is used with a method to make it conditional: if the ETag that would have been returned in an unconditional GET request matches the ETag that is specified in this request header, an entity will not be returned from the server; instead, a 304 (not modified) response will be returned without any message-body. The purpose of this feature is to allow efficient updates of cached information with a minimum amount of transaction overhead.
+HTTP Header | Request or Response | Applicability
+------------|---------------------|----------------
+Last-Modified | Response | The Last-Modified response header indicates the date and time at which the origin server believes the resource was last modified.
+ETag | Response | An entity tag, or ETag is a value used by the origin server to uniquely identify a version of a resource representation. It is normally a strong validator since its value can be changed every time the server modifies the representation.
+If-Modified-Since | Request | The If-Modified-Since request header is used with a method to make it conditional: if the requested resource has not been modified since the time specified in this field, an entity will not be returned from the server; instead, a 304 (not modified) response will be returned without any message-body. The purpose of this feature is to allow efficient updates of cached information with a minimum amount of transaction overhead.
+If-None-Match | Request | The If-None-Match request header is used with a method to make it conditional: if the ETag that would have been returned in an unconditional GET request matches the ETag that is specified in this request header, an entity will not be returned from the server; instead, a 304 (not modified) response will be returned without any message-body. The purpose of this feature is to allow efficient updates of cached information with a minimum amount of transaction overhead.
 
 ## Origin Servers - Example Java Code
 
 *Java Example: ETag*
 
-```
+```java
 @GET
 @Path("{id}")
 public Response conditionalGetExample(@PathParam("id") final String id, final Request request) {
@@ -71,11 +59,11 @@ public Response conditionalGetExample(@PathParam("id") final String id, final Re
 
 ## Origin Servers - Example (J)Ruby on Rails Code
 
-If you’re using respond\_to or calling render yourself, use code like:
+If you’re using respond_to or calling render yourself, use code like:
 
 *Ruby Example: ETag*
 
-```
+```ruby
 class ProductsController < ApplicationController
   def show @product = Product.find(params[:id])
     # If the request is stale according to the given timestamp and etag
@@ -98,7 +86,7 @@ If you’re not using `respond_to` or calling `render` yourself, use code like t
 
 *Ruby Example: ETag*
 
-```
+```ruby
 class ProductsController < ApplicationController
   # This will automatically send back a :not_modified if the request is 
   # fresh, and will render the default template (product.*) if it's 
@@ -116,7 +104,7 @@ Here is an example of setting the Last-Modified header
 
 *Ruby Example: ETag*
 
-```
+```ruby
 class SampleController(BaseController):
   def index(self):
     ...
@@ -128,11 +116,11 @@ class SampleController(BaseController):
 # this header is left as an exercise for the reader.
 ```
 
-Here is an example of setting the ETag header and supporting the \`If-None-Match\` header
+Here is an example of setting the ETag header and supporting the `If-None-Match` header
 
 *Ruby Example: If-None-Match*
 
-```
+```ruby
 from pylons.controllers.util import etag_cache
 
 def my_action(self):
@@ -152,7 +140,7 @@ def my_action(self):
 
 *Java Example: ETag*
 
-```
+```java
 // Here is an example of using the org.apache.httpcomponents
 // CachingHttpClient
 public static void main(final String[] args) throws IOException {
@@ -183,7 +171,7 @@ Here is an example of making a conditional request using the *If-None-Match* hea
 
 *Python Example: If-None-Match, If-Modified-Since*
 
-```
+```python
 import httplib2
 
 h = httplib2.Http(".cache")
