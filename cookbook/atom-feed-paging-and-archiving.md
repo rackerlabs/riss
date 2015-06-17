@@ -181,7 +181,7 @@ An example of an archived feed:
 
 *Archived Feed*
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:fh="http://purl.org/syndication/history/1.0">
   <title>Example Feed</title>
