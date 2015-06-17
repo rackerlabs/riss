@@ -7,46 +7,41 @@ Request Parameter | Description | Type and Range | Defaults
 limit | Maximum number of records to return | Positive Integer. Range or acceptable values to be defined by Service. Services should document any limitations on this value including if the valid set of values is defined as a set of values. For example, a valid `limit` can be defined to be one of 25, 50, 75, 100. | Defined by the Service.
 marker | Identifier of the last item on the previous page of the list | Type may vary by service (could be an Integer, UUID, or URN). | Null (which results in the first page)
 
-Example: `http://service.rackspace.com/customers?limit=10,marker=20`
+Example: `http://service.rackspace.com/customers?limit=10&marker=20`
 
-*Cache-Ability*
+## Cache-Ability
 
 Consider the cache-ability of your resource. If too many options are provided, the chance of cache-hits are reduced which will have an impact on the scalability and performance of the Service.
 
-## Cloud Control API - none
+## Survey of existing pagination schemes
 
-## Autohost API - none
+These are the existing services that were evaluated to determine common pagination schemes.
 
-## CBS - none
+Service           | Scheme
+------------------|---------
+Cloud Control API | none
+Autohost API      | none
+CBS               | none
+Dbaas             | none
+Bigdata           | none
+Support Service   | none
+Usage API         | none
+RackConnect       | none
+CBU               | none
+Customer          | none
+Identity          | none
+AutoScale         | `limit` & `marker`
+Cloud Queues      | `limit` & `marker`
+Neutron           | `limit`, `marker` & `page_reverse`
 
-## Dbaas - none
+## Selected Pagination Scheme
 
-## Bigdata - none
-
-## Support Service - none
-
-## Usage API - none
-
-## RackConnect - none
-
-## CBU - none
-
-## Customer - none
-
-## Identity - none
-
-## AutoScale - `limit` & `marker`
-
-## Cloud Queues - `limit` & `marker`
-
-Name     | Type              | Description
----------|-------------------|------------------------------------
-`marker` | String *(Optional)* | Specifies the name of the last queue received in a previous request, or none to get the first page of results.
+Name     | Type                 | Description
+---------|----------------------|------------------------------------
+`marker` | String *(Optional)*  | Specifies the name of the last queue received in a previous request, or none to get the first page of results.
 `limit`  | Integer *(Optional)* | Specifies the number of queues to return. The default value for the number of queues returned is 10. If you do not specify this parameter, the default number of queues is returned.
 
-## Neutron - `limit`, `marker` & `page\_reverse`
-
-Pagination of requests
+## Pagination of requests
 
 To reduce load on the service, list operations return a maximum number of items at a time. To help you navigate the collection, you can set the `limit`, `marker`, and `page_reverse` parameters in the URI.
 
