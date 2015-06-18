@@ -4,6 +4,7 @@ This section contains specific recommendations and HOW-TOs for Programming Langu
 
 ## Section Contents
 
--   [Python](python-guidelines)
--   [Ruby](ruby-guidelines)
--   [Java](java-guidelines)
+* [Python](python-guidelines.md)
+* [Ruby](ruby-guidelines.md)
+* [Java](java-guidelines.md)
+* [Go](golang-guidelines.md)
