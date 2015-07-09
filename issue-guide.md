@@ -7,6 +7,7 @@ For this project, issues on GitHub represent actionable work that should be done
 ## Issue format & content
 
 For issues that are meant to request an enhancement or addition (see Labels, below), we'd like the issue to contain the following details:
+
 1. A short description of the proposed change
 2. Rationale: A paragraph or two justifying why the change will benefit the project
 3. Details (optional): if you want to do so, you can also provide additional details that may find their way into a pull request once the issue is approved (see Labels, below).
