@@ -36,9 +36,9 @@ Want to get more familiar with what's going on?
 
 Looking for something to work on? The list of [issues](https://github.com/rackerlabs/riss/issues) is a great place to start. See some of our guides for more details:
 
-* [Contributing Guide](https://github.com/rackerlabs/riss/wiki/Contributing)
-* [Issue Guide](https://github.com/rackerlabs/riss/Issue-Guide)
-* [Review Process Guide](https://github.com/rackerlabs/riss/Review-Process)
+* [Contributing Guide](CONTRIBUTING.md)
+* [Issue Guide](issue-guide.md)
+* [Review Process Guide](review-process.md)
 
 You are also encouraged to start a discussion by filing an [issue](https://guides.github.com/features/issues/) or creating a [gist](https://help.github.com/articles/about-gists/).
 

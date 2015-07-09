@@ -8,7 +8,7 @@ We welcome contributions to our standards. Please follow these guidelines to mak
     - You can skip this step for trivial changes.
     - Reuse an existing issue on the topic, if there is one.
     - Get agreement from the team and the community that your proposed change is a good one.
-    - If your change adds a new guideline, standard or recipe, follow the [Review Process](Review-Process.md).
+    - If your change adds a new guideline, standard or recipe, follow the [Review Process](review-process.md).
     - Clearly state that you are going to take on implementing it, if that's the case. The issue filer and the implementer don't have to be the same person.
 2. Create a personal fork of the repository on GitHub (if you don't already have one).
 3. Create a branch off of master (`git checkout -b mybranch`).
@@ -62,7 +62,7 @@ This project is organized as follows:
 
 ## Issues
 
-If you are looking at getting your feet wet with some simple (but still beneficial) changes, check out our [up for grabs Issues](https://github.com/rackerlabs/riss/labels/up-for-grabs). You do not need to file an issue for trivial changes (e.g. typo fixes). Just send us
+If you are looking at getting your feet wet with some simple (but still beneficial) changes, check out our [up for grabs Issues](https://github.com/rackerlabs/riss/labels/up%20for%20grabs). You do not need to file an issue for trivial changes (e.g. typo fixes). Just send us
 a PR if it's tiny.
 
 Don't feel obliged to follow every issue with a PR. Simply filing issues for problems you
@@ -76,7 +76,7 @@ encounter is a great way to contribute too!
   a discussion so we can agree on a direction before you invest a large amount
   of time.
 * **DON'T** submit PRs that alter licensing related files or headers. If you believe there's a problem with them, file an issue and we'll be happy to discuss it.
-* **DON'T** add guideline, standard or recipe additions without filing an issue and discussing with us first. See [Review Process](Review-Process.md).
+* **DON'T** add guideline, standard or recipe additions without filing an issue and discussing with us first. See [Review Process](review-process.md).
 
 ## Making a change
 
