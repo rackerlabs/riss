@@ -129,4 +129,10 @@
 
 This section needs to be proven out.
 
-1. Use [Hydra vocabulary](http://www.hydra-cg.com/spec/latest/core/) for related resources and actions in JSON representations.
+Candidates for JSON HATEOAS standards
+
+1. Use [Hydra vocabulary](http://www.hydra-cg.com/spec/latest/core/) for related resources and actions in JSON representations. This builds on JSON-LD which is also on this list.
+2. [Hypertext Application Language](https://tools.ietf.org/html/draft-kelly-json-hal-06) (HAL)
+3. [JSON-LD](http://www.w3.org/TR/json-ld/)
+4. [JSON API](http://jsonapi.org/)
+5. [JSON Hyper-Schema](http://json-schema.org/latest/json-schema-hypermedia.html)
