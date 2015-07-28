@@ -20,11 +20,13 @@ A guideline is a piece of advice that may be objective or subjective but should 
 
 #### Standards
 
-A standard is a specific rule that can be objectively satisfied and implemented. A standard should always be implemented by services.
+A standard is a specific rule that can be objectively satisfied and implemented. A standard should always be implemented by services.  A standard should not be abstract, but should be specific enough that it can be verified by a machine.
 
 #### Cookbook Recipes
 
-A cookbook recipe is a document focused on describing a common pattern (need or problem) and our recommended solution(s) for the common pattern.
+A cookbook recipe is a document focused on describing a common pattern (need or problem) and our recommended solution(s) for the common pattern.  
+
+Recipes describe best practices for supporting standards and guidelines.
 
 ## How to Engage, Contribute and Provide Feedback
 
