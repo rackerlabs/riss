@@ -1,6 +1,6 @@
 # Wrapping Vendor Applications
 
-## problem
+## Problem
 
 You want to integrate to a COTS (commercial off the shelf) or SaaS (software as a service) application.  How do you do so in a way that limits coupling and maximizes vendor diversification options?
 
