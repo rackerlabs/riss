@@ -8,36 +8,18 @@ You want to know how to choose reasonable URLs for the resources in your RESTful
 
 1.  Prefer short URLs (using short hostnames and short path components). This makes them easy to write down or spell or remember.
 2.  URL paths should be hierarchical, and should permit consumers to "hack" the path "up the tree." The user should be able to remove the leaf path and get a meaningful parent resource.
-3.  URLs should be meaningful. They should describe the resource.
-4.  URLs should be predictable based on the [ubiquitous language](http://martinfowler.com/bliki/UbiquitousLanguage.html) of the [bounded context](http://martinfowler.com/bliki/BoundedContext.html) that the service is part of.
-5.  The naming scheme you use for URLs in your api should be consistent across resources. If you use extensions, do not use .html in one location and .htm in another. Consistent patterns make URLs more predictable.
-6.  URLs should be readable. That is, they should not use mysterious abbreviations, etc.
-7.  Strive to limit your resource hierarchy to no more than a depth of 3 resources. You shouldn’t need to go deeper than resource/identifier/resource.
+3.  URLs should be meaningful. They should name the resource using the [ubiquitous language](http://martinfowler.com/bliki/UbiquitousLanguage.html) of the domain that the service is part of.
+4.  The naming scheme you use for URLs in your api should be consistent across resources. If you use extensions, do not use .html in one location and .htm in another. Consistent patterns make URLs more predictable.
+5.  URLs should be readable. That is, they should not use mysterious abbreviations, etc.
+6.  Strive to limit your resource hierarchy to no more than a depth of 3 resources. You shouldn’t need to go deeper than resource/identifier/resource.
     ```
     /resource/identifier/resource
     ```
-8.  Avoid URI aliases and do NOT associate different URIs to inherently identify the same resource. If they cannot be avoided, one resource should be considered canonical, and requests to any alias should redirect to the canonical resource.
-9.  Treat query parameters as optional with sensible defaults
-10.  Expose fine grained "refinements" of a resource at child path elements to allow partial updates or edits.
-11.  Do NOT use domain nouns from another service in the canonical path. A service must be free to control its own namespace, so coupling to another services domain model for canonical naming of resources is bad.
-
-## Standards
-
-1.  Resources must be identified using nouns, not verbs.
-2.  Use plural nouns only for consistency (no singular nouns).
-    ```
-    /conversations
-    ```
-3.  Use matrix parameters to enable filtering collections of resources.
-    ```
-    /conversations;author=ben;topic=design
-    ```
-4.  URLs should be all lower case.
-5.  Use hyphens rather than spaces or underlines.
-    ```
-    /configuration-boms
-    ```
-6.  Put the version number at the base of your URL (see Versioning APIs for discussion on if this should be done).
+7.  Avoid URI aliases and do NOT associate different URIs to identify the same resource. If this cannot be avoided, one resource should be considered canonical, and requests to any alias should redirect to the canonical resource.
+8.  Treat query parameters as optional with sensible defaults. If you think a query parameter is required, that may indicate that you need to separate out a different resource.
+9.  Expose fine grained "refinements" of a resource at child path elements to allow partial updates or edits. See examples below.
+10.  Do NOT use domain nouns from another service in the canonical path. A service must be free to control its own namespace, so coupling to another service's domain model for canonical naming of resources is bad. See examples below.
+11.  If you decide to use URI versioning then put the version number at the base of your URL (see Versioning APIs for discussion on if this should be done).
     * As described in the Versioning cookbook recipe,
         * The root level of the path component will be a version identifier when using versioned URIs
             ```
@@ -47,25 +29,52 @@ You want to know how to choose reasonable URLs for the resources in your RESTful
             ```
             http://example.com/permalink/to/resource
             ```
-7.  URL vs. header:
-    * If it changes the logic you write to handle the response, put it in the URL.
-    * If it doesn’t change the logic for each response, like OAuth info, put it in the header.
-8.  Use the HTTPS protocol (rather than HTTP).
-9.  Do not use the names of domain objects not owned by your service in the path component of the URL.
+
+## Standards
+
+1.  Resources must be identified using nouns, not verbs.
+2.  Use plural nouns only for consistency (no singular nouns).
+    ```
+    /conversations
+    ```
+3.  Use matrix parameters to enable filtering collections of resources.  Matrix parameters can be included in the middle of a path hierarchy, but query paramters can apply only to the leaf node of the path hierarchy.
+    ```
+    /conversations;author=ben;topic=design
+    ```
+4.  URLs should be all lower case.
+5.  Use hyphens rather than spaces or underlines.
+    ```
+    /configuration-boms
+    ```
+6.  URL vs. header: The [HTTP standard on resources](https://tools.ietf.org/html/rfc7231#section-2) points out that a design goal of HTTP is to separate the resource identification (URI) from the request semantics (method and a few headers).
+    * If it changes 'what' you are identifying, put it in the URL
+    * If it doesn’t 'what' you are identifying, like OAuth info, put it in the header.
+7.  Use the HTTPS protocol (rather than HTTP).
 
 ## Recipes
 
-1.  Identify the nouns in the business domain by analyzing the requirements. Determine which are in the functional scope of the service. Place these in a hierarchy based on the parent-child relationships and map the hierarchy to a path.
+1.  Identify the nouns in the business domain by analyzing the requirements. Determine which are in the functional scope of the service. Place these in a hierarchy based on the parent-child relationships and map the hierarchy to a path. The general rule is that domain names for entities or anything else owned by the service should be path elements, while data elements owned by external services should be query parameters.
 2.  Inheritance hierarchies of domain entities should generally be mapped to a single entity name of the lowest type that all concrete classes inherit from for the purposes of naming URIs. Queries, however, may substitute the specific subtype noun for the general one to express that we are searching only for resources of the restricted type (or it's children).
+Get all animals (which will include, among others, the ducks):
+```
+http://example.com/animals
+```
+Get just ducks:
+```
+http://example.com/ducks
+```
+
 3.  Actions or events that happen to a resource can be treated as subordinate domain nouns, using the plural noun form of the action verb or the event name.
     ```
     http://example.com/requests/{id}/cancelations
     ```
-Submitting an HTTP POST or PUT request to this resource is the way that clients will invoke that action.
-When these actions are idempotent (an order cannot be placed twice in a row), so these actions can be requested by use PUT of the appropriate representation to these URIs. When they are not idempotent, the are created by posting to the plural form.
-4.  Refinements to a resource, which are useful for things like partial updates, can be given domain names and placed under the parent resource in the path.  This is a good reason to break the guideline above that proposes limiting the depth of the path hierarchy to at most 3 path segments.
-5.  Identify the nouns in the business domain by analyzing the requirements. Determine which are in the functional scope of the service. Place these in a hierarchy based on the parent-child relationships and map the hierarchy to a path. The general rule is that domain names for entities or anything else owned by the service should be path elements, while data elements owned by external services should be query parameters.
-6.  There are times when location independent URIs will be appropriate, or that we wish to refer to "real world object" as opposed to document representations. In these case, we use a URN, either from the urn: scheme, or from the http: schema (see FAQ question \#1 for more info).
+Submitting an HTTP POST request to this resource is the way that clients will invoke that action.
+4.  Refinements to a resource, which are useful for things like partial updates, can be given domain names and placed under the parent resource in the path.  
+```
+http://example.com/people/{id}/email
+```
+Submitting a PUT request to this resource updates just the email domain entity, and not the other fields of the person entity.
+5.  There are times when location independent URIs will be appropriate, or that we wish to refer to "real world object" as opposed to document representations. In these cases, we use a URN, either from the urn: scheme, or from the http: schema (see FAQ question \#1 for more info).
 
 ## Examples
 
@@ -176,6 +185,10 @@ This is defined by [RFC 3986](http://www.ietf.org/rfc/rfc3986.txt) (RFC 2396 is 
 A URN is often expressed within the "urn:" schema see RFC 2141, but RFC 3986 says The term "Uniform Resource Name" (URN) has been used historically to refer to both URIs under the "urn" scheme [RFC2141], which are required to remain globally unique and persistent even when the resource ceases to exist or becomes unavailable, and to any other URI with the properties of a name.
 
 The [W3C document Cool URIs for the Semantic Web](http://www.w3.org/TR/cooluris/) discusses two common ways of making http: scheme URI's for "real world objects", the hash ("\#") fragment method and the status code "303 See Other". The latter method was accepted and [announced](http://lists.w3.org/Archives/Public/www-tag/2005Jun/0039.html) after long debate by the W3C Technical Architecture Group (TAG). The possible ambiguity of http: URIs have been discussed by Tim Berners Lee in [What do HTTP URIs Identify?](http://www.w3.org/DesignIssues/HTTP-URI.html).
+
+2.  Should machines infer meaning from path hiearchy?
+
+Looking at the guideline above that says 'URL paths should be hierarchical, and should permit consumers to "hack" the path "up the tree." The user should be able to remove the leaf path and get a meaningful parent resource.', please interpret this as a convenience for humans to discovery API capabilities more easily.  Machines on the other hand should not have logic for path traversal. Prefer HATEOAS links for this purpose (see representation design chapter).
 
 ## References
 
