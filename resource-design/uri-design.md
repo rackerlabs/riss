@@ -55,15 +55,15 @@ You want to know how to choose reasonable URLs for the resources in your RESTful
 
 1.  Identify the nouns in the business domain by analyzing the requirements. Determine which are in the functional scope of the service. Place these in a hierarchy based on the parent-child relationships and map the hierarchy to a path. The general rule is that domain names for entities or anything else owned by the service should be path elements, while data elements owned by external services should be query parameters.
 2.  Inheritance hierarchies of domain entities should generally be mapped to a single entity name of the lowest type that all concrete classes inherit from for the purposes of naming URIs. Queries, however, may substitute the specific subtype noun for the general one to express that we are searching only for resources of the restricted type (or it's children).
-Get all animals (which will include, among others, the ducks):
-```
-http://example.com/animals
-```
-Get just ducks:
-```
-http://example.com/ducks
-```
 
+    Get all animals (which will include, among others, the ducks):
+    ```
+    http://example.com/animals
+    ```
+    Get just ducks:
+    ```
+    http://example.com/ducks
+    ```
 3.  Actions or events that happen to a resource can be treated as subordinate domain nouns, using the plural noun form of the action verb or the event name.
     ```
     http://example.com/requests/{id}/cancelations
