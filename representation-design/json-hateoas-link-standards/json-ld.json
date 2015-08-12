@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "next": "http://schema.org/url",
+    "find": "http://schema.org/url",
+    "admin": {
+      "@id": "adminRef",
+      "@container": "@list"
+    },
+    "adminRef": {
+      "@id": "http://schema.org/url",
+      "title": "http://schema.org/name"
+    },
+    "currentlyProcessing": "https://schema.org/Integer",
+    "shippedToday": "https://schema.org/Integer",
+    "orders": {
+      "@id": "order",
+      "@container": "@list"
+    },
+    "order": {
+      "@id": "http://schema.org/url",
+      "basket": "http://schema.org/url",
+      "customer": "http://schema.org/url",
+      "total": "https://schema.org/amount",
+      "currency": "https://schema.org/currency",
+      "status": "https://schema.org/OrderStatus"
+    }
+  },
+  "@id": "/orders",
+  "next": "/orders?page=2",
+  "find": "/orders{?id}",
+  "admin": [{
+    "@id": "/admins/2",
+    "title": "Fred"
+  }, {
+    "@id": "/admins/5",
+    "title": "Kate"
+  }],
+  "currentlyProcessing": 14,
+  "shippedToday": 20,
+  "orders": [{
+    "@id": "/orders/123",
+    "basket": "/baskets/98712",
+    "customer": "/customers/7809",
+    "total": 30.00,
+    "currency": "USD",
+    "status": "shipped"
+  }, {
+    "@id": "/orders/124",
+    "basket": "/baskets/97213",
+    "customer": "/customers/12369",
+    "total": 20.00,
+    "currency": "USD",
+    "status": "processing"
+  }]
+}

@@ -1,0 +1,61 @@
+{
+  "@context": {
+    "@vocab": "http://www.w3.org/ns/hydra/context.jsonld",
+    "find": "hydra:IriTemplate",
+    "admin": {
+      "@id": "adminRef",
+      "@container": "@list"
+    },
+    "adminRef": {
+      "@id": "http://schema.org/url",
+      "title": "http://schema.org/name"
+    },
+    "currentlyProcessing": "https://schema.org/Integer",
+    "shippedToday": "https://schema.org/Integer",
+    "order": {
+      "@id": "http://schema.org/url",
+      "basket": "http://schema.org/url",
+      "customer": "http://schema.org/url",
+      "total": "https://schema.org/amount",
+      "currency": "https://schema.org/currency",
+      "status": "https://schema.org/OrderStatus"
+    }
+  },
+  "@id": "/orders",
+  "@type": "PagedCollection",
+  "nextPage": "/orders?page=2",
+  "find": "/orders{?id}",
+  "admin": [{
+    "@id": "/admins/2",
+    "title": "Fred"
+  }, {
+    "@id": "/admins/5",
+    "title": "Kate"
+  }],
+  "operation": [
+    {
+      "@id": "/orders",
+      "@type": "CreateResourceOperation",
+      "method": "POST"
+    }
+  ],
+  "currentlyProcessing": 14,
+  "shippedToday": 20,
+  "member": [{
+    "@id": "/orders/123",
+    "@type": "order",
+    "basket": "/baskets/98712",
+    "customer": "/customers/7809",
+    "total": 30.00,
+    "currency": "USD",
+    "status": "shipped"
+  }, {
+    "@id": "/orders/124",
+    "@type": "order",
+    "basket": "/baskets/97213",
+    "customer": "/customers/12369",
+    "total": 20.00,
+    "currency": "USD",
+    "status": "processing"
+  }]
+}
