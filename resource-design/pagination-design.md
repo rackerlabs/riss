@@ -44,6 +44,7 @@ RackConnect       | none
 CBU               | none
 Customer          | none
 Identity          | none
+Cloud Feeds       | `limit`, `marker` & `direction`
 AutoScale         | `limit` & `marker`
 Cloud Queues      | `limit` & `marker`
 Neutron           | `limit`, `marker` & `page_reverse`
