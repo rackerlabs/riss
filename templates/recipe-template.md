@@ -1,3 +1,11 @@
+---
+layout: recipe
+title: "A Summary of Very, Very Interesting Things"
+tags: things interesting fascinating cool
+authors:
+    - name: Jim Bob Luke
+    - title: Private Investigator
+---
 # [RECIPE NAME HERE]
 
 ## Problem

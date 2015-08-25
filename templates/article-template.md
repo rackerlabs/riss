@@ -1,4 +1,12 @@
-# [GUIDELINE NAME HERE]
+---
+layout: article
+title: "A Summary of Very, Very Interesting Things"
+tags: things interesting fascinating cool
+authors:
+    - name: Jim Bob Luke
+    - title: Private Investigator
+---
+# [TOPIC NAME HERE]
 
 ## Overview
 [Briefly describe the consideration that this guideline pertains to.  For example, "Describes pagination of collections."]
@@ -14,7 +22,6 @@
 
 ### Discussion
 [In a conversational tone, discuss the solution, why it makes sense, problems to be aware of, etc.]
-
 
 ## Good and Bad Practices
 

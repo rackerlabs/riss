@@ -90,6 +90,33 @@ Typos are embarrassing! We will accept most PRs that fix typos. In order to make
 
 We strive to ensure that our standards, guidelines and recipes conform to a consistent style.  Therefore, please use the appropriate [template](/templates) as your starting point when creating a new document.
 
+### Metadata
+
+We use metadata in each file to describe information about each document. We have chosen [YAML Frontmatter](http://jekyllrb.com/docs/frontmatter/) as defined in [Jekyll](http://jekyllrb.com) for simplicity and to permit deployment of these standards as a Jekyll site. This decision was also informed by the article [Metadata in Scholarly Markdown](http://blog.martinfenner.org/2013/06/29/metadata-in-scholarly-markdown/).
+
+Following are metadata recommended in the YAML section:
+
+* layout: article or recipe
+* title: title of the cookbook recipe or article
+* tags: space delimited set of tags related to the article or cookbook recipe
+* authors: list of authors that have contributed to the article or recipe. Each author should be a YAML object that contains:
+    - name: (required) Full name
+    - email: Email address
+    - title: Job title
+
+For example
+
+```yaml
+---
+layout: article
+title: "A Summary of Very, Very Interesting Things"
+tags: things interesting fascinating cool
+authors:
+    - name: Jim Bob Luke
+    - title: Private Investigator
+---
+```
+
 #### Commit Messages
 
 Please format commit messages as follows (based on this [excellent post](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)):

@@ -24,7 +24,7 @@ A standard is a specific rule that can be objectively satisfied and implemented.
 
 #### Cookbook Recipes
 
-A cookbook recipe is a document focused on describing a common pattern (need or problem) and our recommended solution(s) for the common pattern.  
+A cookbook recipe is a document focused on describing a common pattern (need or problem) and our recommended solution(s) for the common pattern.
 
 Recipes describe best practices for supporting standards and guidelines.
 
