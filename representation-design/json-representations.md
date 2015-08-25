@@ -58,8 +58,9 @@
     * See also:
         - [IETF RFC 7158](http://tools.ietf.org/html/rfc7158) for JavaScript Object Notation (JSON) Data Interchange Format standard
         - [www.json.org](http://www.json.org/)
-2.  Service JSON representations *MUST* pass a JSON validator such as [JSONLint.com](http://jsonlint.com/)
-3. Naming. JSON object names *MUST* conform to JavaScript naming conventions also known as "Camel Case".
+2. JSON Representations referenced as examples in RAML documents *MUST* validate against the JSON Schema for the example.
+3. Service JSON representations *MUST* pass a JSON validator such as [JSONLint.com](http://jsonlint.com/)
+4. Naming. JSON object names *MUST* conform to JavaScript naming conventions also known as "Camel Case".
     * Reference: "Names" in [Code Conventions for the JavaScript Programming Language](http://javascript.crockford.com/code.html)
     * Good Examples:
         -  `targetNode`
@@ -67,7 +68,7 @@
     * Bad Examples:
         - `Big Boy` - reason: leading capital and space
         - `Bar-top` - reason: punctuation in the name
-4.  Paginated Responses must:
+5.  Paginated Responses must:
 
     1.  Wrap response with a pluralized entity name
     2.  Provide an attribute total with the number of results found by the operation
@@ -83,7 +84,7 @@
         }
         ```
 
-5.  Numeric values should be of "number" type:
+6.  Numeric values should be of "number" type:
     1.  Example:
 
         Good
