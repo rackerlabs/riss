@@ -1,3 +1,12 @@
+---
+title: HATEOAS in JSON
+layout: article
+tags: json representation resource
+authors:
+  - name: Mark Morga
+    title: Principal Architect
+    email: mmorga@rackspace.com
+---
 # JSON Representations
 
 ## Guidelines
@@ -118,22 +127,7 @@
 
 ## Response Standards
 
-1. Include a "self" link to the resource
-2. Include links to other resources related to this resource such as:
-    * "child" resources
-    * "parent" resources
-    * other relationships
-3. Include links that indicate actions that are available for this resource
-    * DISCUSSION: need solution for authorization of actions
+See: [HATEOAS in JSON](json-hateoas-links.md)
 
-## Response Proposed Standards
+*DISCUSSION: need solution for authorization of actions*
 
-This section needs to be proven out.
-
-Candidates for JSON HATEOAS standards
-
-1. Use [Hydra vocabulary](http://www.hydra-cg.com/spec/latest/core/) for related resources and actions in JSON representations. This builds on JSON-LD which is also on this list.
-2. [Hypertext Application Language](https://tools.ietf.org/html/draft-kelly-json-hal-06) (HAL)
-3. [JSON-LD](http://www.w3.org/TR/json-ld/)
-4. [JSON API](http://jsonapi.org/)
-5. [JSON Hyper-Schema](http://json-schema.org/latest/json-schema-hypermedia.html)
