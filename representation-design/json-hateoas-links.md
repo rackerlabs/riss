@@ -267,4 +267,4 @@ None.
 4. [IANA Link Relations](https://www.iana.org/assignments/link-relations/link-relations.xhtml)
 5. [Library support for HAL](https://github.com/mikekelly/hal_specification/wiki/Libraries) for: Ruby, Python, Javascript, Java, Scala, Go
 6. [Web Linking](https://tools.ietf.org/html/rfc5988) Describes link relations and attributes of web links
-7. [CURIE Syntax 1.0](hhttp://www.w3.org/TR/CURIE/) W3C standard defining CURIEs.
+7. [CURIE Syntax 1.0](http://www.w3.org/TR/CURIE/) W3C standard defining CURIEs.
