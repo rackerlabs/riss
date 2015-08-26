@@ -257,7 +257,25 @@ A full HAL representation example:
 
 The following are frequently asked questions whose answers are worth collecting in one place.
 
-None.
+*How do you link to resources in other services?*
+
+Links to other resources in other services are listed in the `_links` object in the same was as other related resources. It's important to use CURIEs to appropriately describe the relationship to other resources.
+
+*How do CURIEs describe relationships?*
+
+CURIEs provide a prefix to apply to relationship names that are used to dereference a templated link that when retrieved provides a human-readable description of the link relation. CURIEs achieve something similar to vocabulary documents in JSON-LD.
+
+*Why aren't we using OpenStack style links?*
+
+OpenStack links are certainly simple. For simple linking, HAL is only slightly different than OpenStack. What HAL adds is the ability to:
+
+* Document templated links
+* Document the meaning of custom link relations (via CURIEs) including details like HTTP methods to use with a link
+* Document links that are deprecated
+* Provide a profile with documentation for a representation
+* Provide secondary key for links with the same relation with the `name` attribute 
+* Provide a `title` for links
+* Provide hints to the media type of a linked representation via the `type` attribute
 
 ## References
 
