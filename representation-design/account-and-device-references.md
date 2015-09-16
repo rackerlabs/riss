@@ -10,7 +10,7 @@ authors:
 
 ## Problem
 
-It is desirable to reference Accounts and Devices in representations by by identifier (rather than URL). How should those identifiers be represented.
+It is desirable to reference Accounts and Devices in representations by identifier (rather than URL). How should those identifiers be represented.
 
 ## Guidelines
 
