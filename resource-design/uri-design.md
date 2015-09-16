@@ -98,7 +98,7 @@ These examples are shown using versioned URIs.  Again, please refer to the versi
 
     `https://order.api.rackspace.com/v1.0/orders/{orderId}/cancellations`
 
-    When these actions are idempotent (an order cannot be placed twice in a row), so these actions can be requested by use PUT of the appropriate representation to these URIs. When they are not idempotent, the are created by posting to the plural form. For example, to track approvals order, we could `POST` to:
+    When these actions are idempotent (repeated calls do not change state), so these actions can be requested by use PUT of the appropriate representation to these URIs. When they are not idempotent, the are created by posting to the plural form. For example, to track approvals order, we could `POST` to:
 
     `https://order.api.rackspace.com/v1.0/orders/{orderId}/approvals`
 
