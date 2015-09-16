@@ -22,7 +22,7 @@ It is desirable to reference Accounts and Devices in representations by identifi
 
 1. Account numbers are represented as a URI in the form: `urn:{account-namespace-identifier}:{account-tenant-number}`. For example: `urn:rax-dedicated:987349`.
 2. The Account Namespace Identifier must correspond to one of the Namespace Identifiers in the table below.
-3. 
+ 
 
 ## Discussion
 
