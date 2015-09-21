@@ -63,3 +63,14 @@ CDN | `limit` & `marker`
 Cloud Files | `limit` , `marker` & `end_marker` 
 Cloud Servers | `limit` & `marker`
 Checkmate | `limit` & `offset`
+
+##Summary of request parameters commonly in use
+Type     |Parameter| Description                                             
+---------|---------|---------------------------------------------------------
+Start    |marker  | Indicates a specific resource, not subject to context 
+Start    |offset  | Indicates a specific element of the list, subject to the context of the query
+Start    |page    | Indicates a specific partition of the list, subject to context of the query and page_size
+Stop     |count, limit| The number of elements to retrieve 
+Stop | page_size, per_page| In conjunction with page, effects the start location and number of elements to retrieve
+Stop    |end_marker| A specific resource not to traverse beyond. May be used in conjunction with count or limit
+Direction|direction, page_reversal | Modifies the starting point relative to the marker
