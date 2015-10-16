@@ -10,16 +10,17 @@ You want to know how to choose reasonable URLs for the resources in your RESTful
 2.  URL paths should be hierarchical, and should permit consumers to "hack" the path "up the tree." The user should be able to remove the leaf path and get a meaningful parent resource.
 3.  URLs should be meaningful. They should name the resource using the [ubiquitous language](http://martinfowler.com/bliki/UbiquitousLanguage.html) of the domain that the service is part of.
 4.  The naming scheme you use for URLs in your api should be consistent across resources. If you use extensions, do not use .html in one location and .htm in another. Consistent patterns make URLs more predictable.
-5.  URLs should be readable. That is, they should not use mysterious abbreviations, etc.
-6.  Strive to limit your resource hierarchy to no more than a depth of 3 resources. You shouldn’t need to go deeper than resource/identifier/resource.
+5.  Hyphens are generally preferred to underscores in URIs. However, if you do have a reason for allowing both hyphens and underscores, be consistent. `/configuration-boms` or `/configuration_boms`
+6.  URLs should be readable. That is, they should not use mysterious abbreviations, etc.
+7.  Strive to limit your resource hierarchy to no more than a depth of 3 resources. You shouldn’t need to go deeper than resource/identifier/resource.
     ```
     /resource/identifier/resource
     ```
-7.  Avoid URI aliases and do NOT associate different URIs to identify the same resource. If this cannot be avoided, one resource should be considered canonical, and requests to any alias should redirect to the canonical resource.
-8.  Treat query parameters as optional with sensible defaults. If you think a query parameter is required, that may indicate that you need to separate out a different resource.
-9.  Expose fine grained "refinements" of a resource at child path elements to allow partial updates or edits. See examples below.
-10.  Do NOT use domain nouns from another service in the canonical path. A service must be free to control its own namespace, so coupling to another service's domain model for canonical naming of resources is bad. See examples below.
-11.  If you decide to use URI versioning then put the version number at the base of your URL (see Versioning APIs for discussion on if this should be done).
+8.  Avoid URI aliases and do NOT associate different URIs to identify the same resource. If this cannot be avoided, one resource should be considered canonical, and requests to any alias should redirect to the canonical resource.
+9.  Treat query parameters as optional with sensible defaults. If you think a query parameter is required, that may indicate that you need to separate out a different resource.
+10.  Expose fine grained "refinements" of a resource at child path elements to allow partial updates or edits. See examples below.
+11.  Do NOT use domain nouns from another service in the canonical path. A service must be free to control its own namespace, so coupling to another service's domain model for canonical naming of resources is bad. See examples below.
+12.  If you decide to use URI versioning then put the version number at the base of your URL (see Versioning APIs for discussion on if this should be done).
     * As described in the Versioning cookbook recipe,
         * The root level of the path component will be a version identifier when using versioned URIs
             ```
@@ -42,10 +43,7 @@ You want to know how to choose reasonable URLs for the resources in your RESTful
     /conversations;author=ben;topic=design
     ```
 4.  URLs should be all lower case.
-5.  Use hyphens rather than spaces or underlines.
-    ```
-    /configuration-boms
-    ```
+5.  Use hyphens or underscores in URIs instead of spaces.
 6.  URL vs. header: The [HTTP standard on resources](https://tools.ietf.org/html/rfc7231#section-2) points out that a design goal of HTTP is to separate the resource identification (URI) from the request semantics (method and a few headers).
     * If it changes 'what' you are identifying, put it in the URL
     * If it doesn’t 'what' you are identifying, like OAuth info, put it in the header.
