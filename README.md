@@ -52,6 +52,31 @@ TODO - list of guidelines here
 
 TODO - list of standards here
 
-## Cookbook Recipes
+## Cookbooks
 
-TODO - list of recipes here
+| Cookbook | Last Revised | Content |
+|----------|--------------|---------|
+|Approach to Integration| ||
+|Atom feed paging and archiving||
+|Conditionally enabling users based on business rules in an api||
+|Contract versioning||
+|Cookbooks||
+|Correct use of http verbs||
+|general xml schema guidance||
+|how to implement hateoas||
+|identifying resources with uris||
+|paging event collections||
+|publishing api docs to github||
+|restful resource compositions||
+|service data synchronization||
+|service hostname conventions||
+|supporting http cache validation||
+|using caching in a restful service implementation||
+|using database caching||
+|using http headers for expiration caching||
+|using http proxy caching||
+|using media types||
+|using page and fragment caching||
+|using repose for api rate limiting||
+|when to use an application integration technology that is not restful||
+|when to use atom-hopper||
