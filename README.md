@@ -56,27 +56,27 @@ TODO - list of standards here
 
 | Cookbook | Last Revised | Content |
 |----------|--------------|---------|
-|Approach to Integration| ||
-|Atom feed paging and archiving||
-|Conditionally enabling users based on business rules in an api||
-|Contract versioning||
-|Cookbooks||
-|Correct use of http verbs||
-|general xml schema guidance||
-|how to implement hateoas||
-|identifying resources with uris||
-|paging event collections||
-|publishing api docs to github||
-|restful resource compositions||
-|service data synchronization||
-|service hostname conventions||
-|supporting http cache validation||
-|using caching in a restful service implementation||
-|using database caching||
-|using http headers for expiration caching||
-|using http proxy caching||
-|using media types||
-|using page and fragment caching||
-|using repose for api rate limiting||
-|when to use an application integration technology that is not restful||
-|when to use atom-hopper||
+|Approach to Integration||yes|
+|Atom feed paging and archiving||yes|
+|Conditionally enabling users based on business rules in an api||yes|
+|Contract versioning||yes|
+|Cookbooks||yes|
+|Correct use of http verbs||yes|
+|general xml schema guidance||yes|
+|how to implement hateoas||yes|
+|identifying resources with uris||yes|
+|paging event collections||yes|
+|publishing api docs to github||yes|
+|restful resource compositions||yes|
+|service data synchronization||yes|
+|service hostname conventions||yes|
+|supporting http cache validation||yes|
+|using caching in a restful service implementation||yes|
+|using database caching||yes|
+|using http headers for expiration caching||yes|
+|using http proxy caching||yes|
+|using media types||yes|
+|using page and fragment caching||yes|
+|using repose for api rate limiting||yes|
+|when to use an application integration technology that is not restful||yes|
+|when to use atom-hopper||yes|
