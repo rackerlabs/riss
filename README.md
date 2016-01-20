@@ -45,20 +45,42 @@ Looking for something to work on? The list of [issues](https://github.com/racker
 You are also encouraged to start a discussion by filing an [issue](https://guides.github.com/features/issues/) or creating a [gist](https://help.github.com/articles/about-gists/).
 
 ## Guidelines/Standards
-| Title | Last Revised | Content |
-|----------|--------------|---------|
-|api review||no|
-|communication and planning||yes|
-|documentation||yes|
-|language-framwork||no|
-|monitoring||no|
-|performance||no|
-|quality||yes|
-|references||no|
-|representaion desgin||yes|
-|resrouce design||yes|
-|security||yes|
-|service design||yes|
+| Category| Title | Last Revised | Content |
+|---------|-------|--------------|---------|
+|api review|api review||no|
+|communication and planning|readme||no|
+|communication and planning|communication and planning||yes|
+|documentation|readme||no|
+|documentation|documentaton-standards||yes|
+|documentation|raml-standards-and-practices||yes|
+|language-framework|language-and-framwork-service-guidelines||no|
+|monitoring|readme||no|
+|performance|readme||no|
+|performance|performance||yes|
+|quality|readme||no|
+|quality|quality-standards||yes|
+|references|readme||no|
+|representaion design|readme||yes|
+|representaion design|account-and-device-references||yes|
+|representaion design|json-hateoas-links||yes|
+|representaion design|json-representations||yes|
+|representaion design|representation-design||yes|
+|resource design|readme||yes|
+|resource design|common-resource-patterns||yes|
+|resource design|pagination-design||yes|
+|resource design|sorting||yes|
+|resource design|uri-design||yes|
+|security|readme||no|
+|security|security||yes|
+|service design|readme||yes|
+|service design|design-patters-for-services||yes|
+|service design|rackspace-restful-web-services||yes|
+|service design|references||yes|
+|service design|rest-service-scoring-guide||yes|
+|service design|service-anti-patterns||yes|
+|service design|thoughts-on-soa-standards||yes|
+|service design|why-design-for-rest-now||yes|
+|service design|wrapping-vendor-applications||yes|
 
 ## Cookbooks
 
