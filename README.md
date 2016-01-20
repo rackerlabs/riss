@@ -44,13 +44,21 @@ Looking for something to work on? The list of [issues](https://github.com/racker
 
 You are also encouraged to start a discussion by filing an [issue](https://guides.github.com/features/issues/) or creating a [gist](https://help.github.com/articles/about-gists/).
 
-## Guidelines
-
-TODO - list of guidelines here
-
-## Standards
-
-TODO - list of standards here
+## Guidelines/Standards
+| Title | Last Revised | Content |
+|----------|--------------|---------|
+|api review||no|
+|communication and planning||yes|
+|documentation||yes|
+|language-framwork||no|
+|monitoring||no|
+|performance||no|
+|quality||yes|
+|references||no|
+|representaion desgin||yes|
+|resrouce design||yes|
+|security||yes|
+|service design||yes|
 
 ## Cookbooks
 
