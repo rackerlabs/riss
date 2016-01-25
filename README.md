@@ -2,17 +2,21 @@
 
 ## Mission Statement
 
-To improve the experience of consumers of APIs exposed internally at Rackspace by providing guidance for a consistent and pragmatic RESTful design.
+To provide quality solutions to common technical tasks via cookbooks in the context of guidelines and current best practices.
 
 ## Preamble
 
-This project is a set of guidelines that internal Rackspace APIs not already governed by another set of guidelines (e.g. OpenStack) should follow for new development.
-
-By following the guidelines, standards and recipes found here, internal services at Rackspace will reach a higher degree of consistency that reduces friction for adoption of APIs by other internal teams, that improves the ease of exposing APIs publicly, and that reduces the effort and cost associated with developing API producer and consumer applications.
+The goal of this project is to provide a useful resource for developers and solution architects in construction of application programming interfaces for use at Rackspace. Additionally, guidelines and, where appropriate, consistency standards are provided in order to provide a more uniform environment across the company, which is hoped to facilitate interoperability between teams.
 
 ### Taxonomy
 
 The following kinds of artifacts are in-scope for this project:
+
+#### Cookbook Recipes
+
+A cookbook recipe is a document focused on describing a common pattern (need or problem) and recommended solution(s) for the common pattern.
+
+Recipes describe best practices for supporting standards and guidelines.
 
 #### Guidelines
 
@@ -21,12 +25,6 @@ A guideline is a piece of advice that may be objective or subjective but should 
 #### Standards
 
 A standard is a specific rule that can be objectively satisfied and implemented. A standard should always be implemented by services.  A standard should not be abstract, but should be specific enough that it can be verified by a machine.
-
-#### Cookbook Recipes
-
-A cookbook recipe is a document focused on describing a common pattern (need or problem) and our recommended solution(s) for the common pattern.
-
-Recipes describe best practices for supporting standards and guidelines.
 
 ## How to Engage, Contribute and Provide Feedback
 
