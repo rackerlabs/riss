@@ -6,7 +6,9 @@ You are developing a software solution that needs to integrate with other Racksp
 
 # Solution
 
-Rackspace has adopted a RESTful Service Oriented Architecture (SOA). All integration API functionality should be provided by services that follow the RESTful best practices described by entries in the Rackspace Service Oriented Architecture Cookbooks, which instruct developers on how to create services that follow the Rackspace SOA Guidelines.
+Rackspace has adopted a RESTful Service Oriented Architecture [(SOA)](#references). All integration API functionality should be provided by services that follow the RESTful best practices described by entries in the Rackspace Service Oriented Architecture Cookbooks, which instruct developers on how to create services that follow the Rackspace SOA Guidelines.
+
+(Paragraph on Event Driven Architecture/Cloud Feeds)
 
 # Discussion
 
@@ -88,7 +90,7 @@ Whether they support REST or not, it is usually a good idea to encapsulate acces
 
 You don't. ACID transactions require conversational state that is simply not possible using REST (and arguably is suspect given SOA's statelessness requirement as well). Instead, push transactions inside of one service, or refactor the solution so that it doesn't need distributed transactions. This can be done by using compensating operations generally, or sometimes using reliable messaging (which can be achieved using idempotent delivery). Often the correct RESTful solution will create resources using the "provisional-final" pattern and manage them as application state. EG: create a quote resource that becomes an order resource.
 
-# References
+# <a name="references"></a> References
 
 1.  [Rackspace Service Oriented Architecture Cookbooks](cookbooks.md)
 2.  [Rackspace SOA Guidelines](https://one.rackspace.com/download/attachments/49480223/RackspaceSOAGuidelines_v2.0_DRAFT1.pdf?version=1&modificationDate=1390945322000&api=v2)
