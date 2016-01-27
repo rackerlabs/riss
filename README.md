@@ -6,7 +6,7 @@ To provide quality solutions to common technical tasks via cookbooks in the cont
 
 ## Preamble
 
-The goal of this project is to provide a useful resource for developers and solution architects in construction of application programming interfaces for use at Rackspace. Additionally, guidelines and, where appropriate, consistency standards are provided in order to provide a more uniform environment across the company, which is hoped to facilitate interoperability between teams.
+The goal of this project is to provide a useful resource for developers and solution architects in construction of applications for use at Rackspace. Additionally, guidelines and, where appropriate, consistency standards are provided in order to provide a more uniform environment across the company, which is hoped to facilitate interoperability between teams.
 
 ### Taxonomy
 
