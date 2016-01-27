@@ -42,6 +42,34 @@ Looking for something to work on? The list of [issues](https://github.com/racker
 
 You are also encouraged to start a discussion by filing an [issue](https://guides.github.com/features/issues/) or creating a [gist](https://help.github.com/articles/about-gists/).
 
+## Cookbooks
+| Cookbook | Last Revised | Content |
+|----------|--------------|---------|
+|Approach to Integration||yes|
+|Atom feed paging and archiving||yes|
+|Conditionally enabling users based on business rules in an api||yes|
+|Contract versioning||yes|
+|Cookbooks||yes|
+|Correct use of http verbs||yes|
+|general xml schema guidance||yes|
+|how to implement hateoas||yes|
+|identifying resources with uris||yes|
+|paging event collections||yes|
+|publishing api docs to github||yes|
+|restful resource compositions||yes|
+|service data synchronization||yes|
+|service hostname conventions||yes|
+|supporting http cache validation||yes|
+|using caching in a restful service implementation||yes|
+|using database caching||yes|
+|using http headers for expiration caching||yes|
+|using http proxy caching||yes|
+|using media types||yes|
+|using page and fragment caching||yes|
+|using repose for api rate limiting||yes|
+|when to use an application integration technology that is not restful||yes|
+|when to use atom-hopper||yes|
+
 ## Guidelines/Standards
 | Category| Title | Last Revised | Content |
 |---------|-------|--------------|---------|
@@ -79,32 +107,3 @@ You are also encouraged to start a discussion by filing an [issue](https://guide
 |service design|thoughts-on-soa-standards||yes|
 |service design|why-design-for-rest-now||yes|
 |service design|wrapping-vendor-applications||yes|
-
-## Cookbooks
-
-| Cookbook | Last Revised | Content |
-|----------|--------------|---------|
-|Approach to Integration||yes|
-|Atom feed paging and archiving||yes|
-|Conditionally enabling users based on business rules in an api||yes|
-|Contract versioning||yes|
-|Cookbooks||yes|
-|Correct use of http verbs||yes|
-|general xml schema guidance||yes|
-|how to implement hateoas||yes|
-|identifying resources with uris||yes|
-|paging event collections||yes|
-|publishing api docs to github||yes|
-|restful resource compositions||yes|
-|service data synchronization||yes|
-|service hostname conventions||yes|
-|supporting http cache validation||yes|
-|using caching in a restful service implementation||yes|
-|using database caching||yes|
-|using http headers for expiration caching||yes|
-|using http proxy caching||yes|
-|using media types||yes|
-|using page and fragment caching||yes|
-|using repose for api rate limiting||yes|
-|when to use an application integration technology that is not restful||yes|
-|when to use atom-hopper||yes|
