@@ -6,9 +6,7 @@ You are developing a software solution that needs to integrate with other Racksp
 
 # Solution
 
-Rackspace has adopted a RESTful Service Oriented Architecture [(SOA)](#references). All integration API functionality should be provided by services that follow the RESTful best practices described by entries in the Rackspace Service Oriented Architecture Cookbooks, which instruct developers on how to create services that follow the Rackspace SOA Guidelines.
-
-(Paragraph on Event Driven Architecture/Cloud Feeds)
+Rackspace has adopted a RESTful Service Oriented Architecture [(SOA)](#references). All integration API functionality should be provided by services that follow the RESTful best practices. In addition to synchronous API calls, Rackspace also uses event driven architecture for service integration.
 
 # Discussion
 
@@ -21,8 +19,6 @@ A *service* is an independent unit of software that substantially adheres to the
 A *service capability* is a function exposed through a service contract.
 
 A *service inventory* is a collection of services that are independently governed and standardized and which collectively implement a distinct, independent service oriented architecture. Rackspace has chosen to define a single, unified enterprise inventory that includes all the services produced throughout the company. See the Rackspace entry on using the service inventory.
-
-*SOA governance* refers to the processes used to govern adoption and implementation of SOA. Governance connotes the processes that an enterprise puts in place to ensure that things are done in accordance with best practices, architectural principles, government regulations, laws, and other determining factors. Through governance, services are added to the service inventory, and the life-cycles of service profiles and contracts describing their capabilities are managed.
 
 The Rackspace SOA Guidelines elaborate on eight basic principles of SOA:
 
@@ -37,7 +33,7 @@ The Rackspace SOA Guidelines elaborate on eight basic principles of SOA:
 
 These principles are elaborated in much greater detail
 
-The default architectural style for Rackspace services is HTTP based Representational State Transfer (REST) consistent with Roy Fielding's dissertation and various good descriptions of it on the web and in books such as the RESTful Web Services Cookbook by Subbu Allamaraju. RESTful HTTP based architectures have certain fundamental concepts:
+The default architectural style for Rackspace services is HTTP based Representational State Transfer (REST) consistent with [Roy Fielding's dissertation](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm) and various good descriptions of it on the web and in books such as the RESTful Web Services Cookbook by Subbu Allamaraju. RESTful HTTP based architectures have certain fundamental concepts:
 
 1.  *Resources*: RESTful HTTP is concerned with accessing resources on the network. A resource can be essentially any coherent and meaningful concept that may be addressed and has an identity. Usually the resources relevant to IT systems are information resource (a document or system behavior defined by software), but sometimes a resource can correspond to a real world or abstract entity.
 2.  *Uniform Resource Identifiers*: Resources are identified with strings called URIs defined by [RFC 3986](http://www.apps.ietf.org/rfc/rfc3986.html) and clarified by [RFC 3305](http://www.apps.ietf.org/rfc/rfc3305.html). These strings should obey certain properties: they should be immutable, should not be aliased by the same owner, and should be opaque.
@@ -52,16 +48,26 @@ The default architectural style for Rackspace services is HTTP based Representat
 11. *Self Descriptive Messages*: REST enables intermediate processing within a layered system by constraining messages to be self-descriptive: interaction is stateless between requests, standard methods and media types are used to indicate semantics and exchange information, and responses explicitly indicate cache-ability.
 12. *Code on Demand*: REST allows client functionality to be extended by downloading and executing code as a resource. For example, browser clients often run javascript supplied by servers.
 
+##Event Driven Architecture
+Here are the benefits we have seen with Event Driven Architecture:
+1. Pattern promotes loose coupling.
+2. Enables more resilient design, application dependencies are minimized.
+3. Event emitters dont need to know about their consumers.
+4. Set of consumers can change over time without modifying event emitter.
+5. Broadcast a single event to multiple consumers.
+6. Enables [Event Sourcing Pattern](http://martinfowler.com/eaaDev/EventSourcing.html)
+
+At Rackspace we use [Cloud Feeds](https://www.rackspace.com/knowledge_center/article/cloud-feeds-overview) as our realization of event driven architecture. We choose to use Cloud Feeds because it offers a RESTful API, which confers the advantages described above.
+
 # Good and Bad Practices
 
 ## Good Practices
 
-1.  A service must exchange XML that complies with a governed schema.
-2.  A service may provide alternate representations (such as JSON or SVG) of a resource. The data models of such representations should be consistent with the XML Schema.
-3.  Define the integration entry points for your service using WADL.
-4.  Keep a clear idea of exactly what the resources you expose mean. Usually, but not always, HTTP based resources are information resources.
-5.  Service compositions should be expressed as another service capability, and thus live within the service layer. Use a separate service if necessary when the composition scope isn't a good fit for an existing service. If reuse is likely and it does fit, use an existing service.
-6.  Use the uniform interface defined by HTTP correctly. See the cookbook entry specifically on this topic.
+1.  A service must exchange JSON that complies with a published schema.
+2.  A service may provide alternate representations (such as XML or SVG) of a resource. The data models of such representations should be consistent with the JSON Schema.
+3.  Define the integration entry points for your service using RAML.
+4.  Service compositions should be expressed as another service capability. Use a separate service if necessary when the composition scope isn't a good fit for an existing service. If reuse is likely and it does fit, use an existing service.
+5.  Use the uniform interface defined by HTTP correctly. See the cookbook entry specifically on this topic.
 
 ## Bad Practices
 
