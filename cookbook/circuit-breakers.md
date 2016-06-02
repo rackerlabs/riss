@@ -77,7 +77,7 @@ With electrical circuit breakers in buildings, the breaker continues to remain o
 
 For software circuit breakers we can have the breaker itself detect if the underlying calls are working again. We can implement this self-resetting behavior by trying the protected call again after a suitable interval, and resetting the breaker should it succeed.
 
-![Circuit breaker state machine diagram](img/cookbook/circuit-breakers/state-machine.png)
+![Circuit breaker state machine diagram](../img/cookbook/circuit-breakers/state-machine.png)
 
 The circuit breaker proxy object can be implemented as a state machine as pictured above. The states depicted are:
 
