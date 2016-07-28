@@ -156,7 +156,7 @@ When not to use Cloud Feeds:
 
 Other considerations:
 
-1. Cloud Feeds does not currently offer a capability for self-service feed creation. Currently creating a new feed requires developer / operational effort, which may extend your timeline for including a new feed in your application design.
+1. Cloud Feeds does not currently offer a capability for self-service feed creation. Currently creating a new feed requires developer / operational effort, which may extend your timeline for including a new feed in your application design. To request a new feed, you'll need to use the [Cloud Feeds Intake form](https://one.rackspace.com/display/cloudfeeds/Cloud+Feeds+Intake).
 
 # Good and Bad Practices
 
