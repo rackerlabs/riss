@@ -1,3 +1,12 @@
+---
+layout: recipe
+title: "Approach to Event-Driven Architecture"
+tags: event-driven-architecture
+authors:
+    - name: Ben Truitt
+    - title: Principal Architect
+---
+
 # Approach to Event-Driven Architecture
 
 Early draft - not official
