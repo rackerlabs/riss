@@ -10,7 +10,7 @@ Rackspace has adopted a RESTful Service Oriented Architecture [(SOA)](#reference
 
 # Discussion
 
-A collaboration of architecture teams collectively representing all of Rackspace have agreed to use RESTful service oriented architectures for integration. This applies to all APIs provided by Rackspace systems where consumers are internal or external. The foundational document for the Rackspace approach is the Rackspace SOA Guidelines.
+A collaboration of architecture teams collectively representing all of Rackspace have agreed to use RESTful service oriented architectures for integration. This applies to all APIs provided by Rackspace systems where consumers are internal or external. The foundational document for the Rackspace approach is the [Rackspace SOA Guidelines](https://one.rackspace.com/download/attachments/49480223/RackspaceSOAGuidelines_v2.0_DRAFT1.pdf?version=1&modificationDate=1390945322000&api=v2).
 
 The Rackspace SOA Guidelines adopt the approach to SOA popularized in the books of Thomas Erl. These books reflect the industry consensus on what service orientation means. Both the Rackspace SOA Guidelines, and references that follow the approach of Erl adopt certain basic terminology regarding service orientation, which we now provide.
 
@@ -18,18 +18,18 @@ A *service* is an independent unit of software that substantially adheres to the
 
 A *service capability* is a function exposed through a service contract.
 
-A *service inventory* is a collection of services that are independently governed and standardized and which collectively implement a distinct, independent service oriented architecture. Rackspace has chosen to define a single, unified enterprise inventory that includes all the services produced throughout the company. See the Rackspace entry on using the service inventory.
+A *service inventory* is a collection of services that are independently governed and standardized and which collectively implement a distinct, independent service oriented architecture.
 
 The Rackspace SOA Guidelines elaborate on eight basic principles of SOA:
 
-1.  *Standardized Service Contract*: Our RESTful services express their contracts using the HTTP standard's uniform interface and various artifacts such as XML Schema, WADL, and standardized link relations.
-2.  *Loose Coupling:* Coupling should occur only as consumer-to-contract and contract-to-logic. Other forms of coupling should be avoided.
+1.  *Standardized Service Contract*: Our RESTful services express their contracts using the HTTP standard's uniform interface and various artifacts such as JSON Schema, RAML, and standardized link relations.
+2.  *Loose Coupling:* Coupling should occur only as consumer-to-contract and contract-to-logic. Other forms of coupling should be avoided. For definitions of types of coupling, please refer to the [Rackspace SOA Guidelines](https://one.rackspace.com/download/attachments/49480223/RackspaceSOAGuidelines_v2.0_DRAFT1.pdf?version=1&modificationDate=1390945322000&api=v2).
 3.  *Service Abstraction:* Contracts should expose the minimum information necessary and should hide implementation details behind the contract.
 4.  *Service Reuse-ability:* Service capabilities should be reused. There should be a single global authoritative capability for any functionality and any service capability that provides such functionality should be traceable to the authority.
 5.  *Service Autonomy:* Services should have a high degree of design time control over their runtime environment, to isolate their capabilities from shared infrastructure components.
 6.  *Service Statelessness:* Services should minimize the need to manage in-memory state.
 7.  *Service Discoverability:* Services should be described with metadata that allows information about their properties to be discovered.
-8.  *Service Composability:* Services capabilities should be reusable as compositions within the service layer.
+8.  *Service Composability:* Services capabilities should be reusable by composing together individual service capabilities in order to create a new service capability.
 
 These principles are elaborated in much greater detail
 
@@ -48,16 +48,8 @@ The default architectural style for Rackspace services is HTTP based Representat
 11. *Self Descriptive Messages*: REST enables intermediate processing within a layered system by constraining messages to be self-descriptive: interaction is stateless between requests, standard methods and media types are used to indicate semantics and exchange information, and responses explicitly indicate cache-ability.
 12. *Code on Demand*: REST allows client functionality to be extended by downloading and executing code as a resource. For example, browser clients often run javascript supplied by servers.
 
-##Event Driven Architecture
-Here are the benefits we have seen with Event Driven Architecture:
-1. Pattern promotes loose coupling.
-2. Enables more resilient design, application dependencies are minimized.
-3. Event emitters dont need to know about their consumers.
-4. Set of consumers can change over time without modifying event emitter.
-5. Broadcast a single event to multiple consumers.
-6. Enables [Event Sourcing Pattern](http://martinfowler.com/eaaDev/EventSourcing.html)
-
-At Rackspace we use [Cloud Feeds](https://www.rackspace.com/knowledge_center/article/cloud-feeds-overview) as our realization of event driven architecture. We choose to use Cloud Feeds because it offers a RESTful API, which confers the advantages described above.
+## Event Driven Architecture
+In addition to synchronous RESTful API integrations, we also recommend the use of event driven architecture for enterprise application integration. For more on this topic, please refer to the [Approach to Event Driven Architecture](approach-to-event-driven-architecture.md) cookbook.
 
 # Good and Bad Practices
 
@@ -83,10 +75,6 @@ None.
 # Frequently Asked Questions
 
 The following are frequently asked questions whose answers are worth collecting in one place.
-
-## How do we approach event based integration?
-
-Use ATOM for basic needs. Sometimes use cases will require advanced event based capabilities and then alternatives may be used, if justified. These might include messaging brokers such as JMS or AMQP or HTTP based techniques such as PuSH (pubsubhubbub).
 
 ## How do I integrate with vendor tools, especially when they don't support REST?
 
