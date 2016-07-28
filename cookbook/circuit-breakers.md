@@ -1,9 +1,5 @@
 # Using the circuit breaker pattern to improve availability and resiliency
 
-Early draft - not official
-
-This is a first draft, and has not been reviewed or accepted by the Enterprise Architecture team. It is not yet official or recommended.
-
 # Problem
 
 You want to keep your application online and serving traffic at all times. Therefore you want to know how to design your application to be resilient to failures that may happen in the dependencies of your application.
