@@ -196,8 +196,8 @@ A good rule of thumb is to include just enough data to help event receivers deci
 5. [Event Sourcing](http://martinfowler.com/eaaDev/EventSourcing.html)
 6. Vernon, Vaughn. [Implementing Domain Driven Design](https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577)
 7. [Command and Query Responsibility Segregation (CQRS) Pattern](http://martinfowler.com/bliki/CQRS.html)
-8. Microsoft Developer Network - [Command and Query Responsibility Segregation (CQRS) Pattern](http://martinfowler.com/bliki/CQRS.html)https://msdn.microsoft.com/en-us/library/dn568103.aspx)
-9. Mircosoft Developer Network. The Architecture Journal. [Using Events in Highly Distributed Architectures](https://msdn.microsoft.com/en-us/library/dd129913.aspx)
+8. Microsoft Developer Network - [Command and Query Responsibility Segregation (CQRS) Pattern](https://msdn.microsoft.com/en-us/library/dn568103.aspx)
+9. Microsoft Developer Network. The Architecture Journal. [Using Events in Highly Distributed Architectures](https://msdn.microsoft.com/en-us/library/dd129913.aspx)
 
 # Contributors
 
