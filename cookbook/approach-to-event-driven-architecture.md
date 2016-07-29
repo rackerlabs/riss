@@ -114,7 +114,35 @@ Event sourcing can also be combined with the [Command and Query Responsibility S
 
 Event sourcing is a large topic, and we won't cover it in detail in this entry. The interested reader is referred to [Martin Fowler's Blog Post on the Event Sourcing Pattern](http://martinfowler.com/eaaDev/EventSourcing.html), and to the book [Implementing Domain Driven Design](https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577) by Vaughn Vernon.
 
-### Ingesting events into the data warehouse
+### Ingesting events into the data lake
+
+TODO: take some of this material from Natasha:
+
+    For the purpose of this discussion I would separate Data Lake component from Data Warehouse. Data Lake ingests data without any transformation. As such, when sourcing from a message bus that contains data and metadata the ingestion process can be fully automated. The automation handles:
+    1.      1. Creation of new objects in data lake:
+    a.      Ingestion process reads message bus metadata and recognize that there is a new object on the message bus
+    b.      Ingestion process creates location in Data Lake where the new object will be loaded
+    c.      Ingestion process reads metadata of minimally structured message and discovers message structure
+    d.      Indigestion process creates new object metadata information in Data Lake
+    e.      Ingestion process start loading data
+    2.      2. Change in message structure
+    a.      Ingestion process reads metadata for every message consumed and compares it with the Data Lake metadata
+    b.      Ingestion process finds new field in message metadata and modifies Data Lake accordingly
+    c.      Ingestion process finds missing field in the message and structure the record accordingly
+
+    The Data Lake ingestion process automation will enable us to bring data into analytical side of the house quickly and reliably and with no human intervention. New objects and attributes will be available in the Data Lake as soon as they appear on the message bus. This will enable analysts to consume new objects and attributes immediately after we roll out new applications or upgrades.
+
+     Data Warehouse ETL processes starts from Data Lake – that is when we talk specifics. When new objects appear in the Data Lake and none asks for them on Data Warehouse side no ETL process needs to change. Otherwise, there is a development effort where we bring new entities and attributes into Data Warehouse – the place where we maintain structures and data that answer known questions.
+
+    Minimally structured message would be optimal feed for Data Lake automated ingestion, therefore the process should consume from the interface rather than data store.
+
+    When we talk about Data Lake ingestion automation there are some features that message bus should possess:
+    1.      1.Message bus metadata should be exposed;
+    2.      2. Message bus should support plug-ins to implement custom features if necessary;
+    3.      3.Message bus should start reliably serving data from existing applications (over 80) as soon as possible, without modifying applications. Modifying applications to emit data to message bus will have to be planned and implemented accordingly;
+    4.      4.Message bus should have good performance. The automate Data Lake ingestion process does not have high performance requirements. However, this technology should enable streaming analytic and that is where performance becomes significant. I think, if we are selling Fanatical Support, the streaming analytic is a method that we can use to wow our customers;
+    5.      5.Message bus technology has to be reliable and supportable.
+
 
 Since event notifications have data that may be of interest for reporting purposes, especially when the event sourcing pattern is used (see above), we should consider how to get event notification data into the data warehouse.
 
@@ -126,43 +154,12 @@ Another possibility is to have an integration from the event channel to the data
 
 ![ETL job per event channel](../img/cookbook/event-driven-architecture/ingesting-events-into-data-warehouse-option-2.png)
 
-### Selecting an appropriate event channel
-
-In general, we prefer the use of [Cloud Feeds](https://support.rackspace.com/how-to/cloud-feeds-overview/) as an event channel. Reasons include:
-
-1. Offers a RESTful interface, which conforms to our [Approach to (service-oriented) Integration](approach-to-integration.md).
-2. Implements the [Atom Publishing Protocol](https://tools.ietf.org/html/rfc5023), a simple, widely used HTTP-based protocol for publishing web resources.
-3. Represents event notifications using the [Atom Syndication Format](https://tools.ietf.org/html/rfc4287), a well-defined, widely used, extensible format for specifying the details about what is being published.
-   - Many software libraries are already available for parsing atom entries (e.g. Apache Abdera).
-4. Offers the ability for clients to publish or consume events in either XML or JSON, and adapts from one format to another transparently.
-5. Optionally validates event notifications against a per-channel schema to ensure that producers only produce event notifications that conform to the published representation contract.
-6. Widely used at Rackspace already
-   - Once a team has created code to produce to or consume from a feed, it becomes very easy to repeat this on another project.
-   - Code reuse is easy for producer and consumer software libraries in various languages
-7. Customers may consume events from Cloud Feeds using an existing publicly available API.
-8. By standardizing on this event channel, it is easier for the data warehouse to have only one place to gather event notifications from for reporting purposes. As described above, a single ETL job could pull in event notifications that span multiple event channels that are all realized by Cloud Feeds.
-9. Along similar lines, business activity monitoring (BAM) and business event management (BEM) solutions can leverage the centrally available event data to offer business level metrics and monitoring.
-10. Cloud Feeds is already well integrated with Rackspace security solutions like the Identity Service, Repose-based Role-Based-Access-Control (RBAC), etc.
-
-When not to use Cloud Feeds:
-
-1. When your integration requires faster delivery of events than is possible with Cloud Feeds.
-   - At the time of this writing, the current implementation of Cloud Feeds includes a 10 second delay between event publication and the event becoming available for consumption due to an implementation detail.
-   - HTTP, AtomPUB and Atom Syndication are less efficient for messaging than higher performance messaging technologies such as Apache Kafka, JMS, etc.
-2. When your event producer does not have an internal IP address.
-  - At the time of this writing the public interface Cloud Feeds is read-only. It does not offer a capability for event producers to publish event notifications from outside of our internal network.
-3. When the payload size of your event notification exceeds the maximum size supported by Cloud Feeds.
-4. When the volume of event notifications exceeds the maximum volume supported by Cloud Feeds.
-
-Other considerations:
-
-1. Cloud Feeds does not currently offer a capability for self-service feed creation. Currently creating a new feed requires developer / operational effort, which may extend your timeline for including a new feed in your application design. To request a new feed, you'll need to use the [Cloud Feeds Intake form](https://one.rackspace.com/display/cloudfeeds/Cloud+Feeds+Intake).
-
 # Good and Bad Practices
 
 ## Good Practices
 
 1. Publish the event notification representation contract so that consumers can couple to this well-defined contract.
+2. Follow the guidance found in [Selecting an Event Channel for Event-Driven Integration](../service-design/selecting-an-event-channel.md) to select the best technology to use to realize an event chanel in your application-to-application integration architecture.
 
 ## Bad Practices
 
@@ -188,6 +185,31 @@ The purpose of an event notification is to inform event consumers about  changes
 
 A good rule of thumb is to include just enough data to help event receivers decide how to react to the event. If event consumers require more data or functional interaction to complete their processes they can use alternative integration interfaces such as synchronous REST API calls to accomplish that part of the interaction.
 
+*How can I know whether an event is consumed by a particular consumer?*
+
+TODO
+
+*Are there any patterns I should be aware of that fit into this messaging model?*
+
+TODO: [dead letter channel](http://www.enterpriseintegrationpatterns.com/patterns/messaging/DeadLetterChannel.html)
+TODO: [Asynchronous queuing](http://soapatterns.org/design_patterns/asynchronous_queuing)
+
+*When is it better to use autonomous messages, and when is it better to use batch messages?*
+
+TODO - address this note from Yogi
+
+    There is a new model that is getting popular.
+    There are batch modes of operations which orchestrate the batches in an asynchronous fashion.
+    The APIs usually allow larger batches to be submitted, asynchronously process them and also provide feedback on the batches.
+    The Biggest benefit is in terms of feedback to the actual API invoker in terms of number of events that got proceeded, the reasons they got failed etc.
+    Many of the SAAS providers support these kind of Batch Modes, Ex: Sales Force Bulk API  Zuora Usage API
+    How the batches are handled is internal to the Service Provider.
+    There are less system hand offs and less chattiness between the application as this approach encourages direct integration and clear visibility around consumption.
+
+*Are an event channel and a message bus the same thing? If not, what are the differences?*
+
+TODO
+
 # References
 1. [Atom Publishing Protocol](https://tools.ietf.org/html/rfc5023)
 2. [Atom Syndication Format](https://tools.ietf.org/html/rfc4287)
@@ -196,8 +218,9 @@ A good rule of thumb is to include just enough data to help event receivers deci
 5. [Event Sourcing](http://martinfowler.com/eaaDev/EventSourcing.html)
 6. Vernon, Vaughn. [Implementing Domain Driven Design](https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577)
 7. [Command and Query Responsibility Segregation (CQRS) Pattern](http://martinfowler.com/bliki/CQRS.html)
-8. Microsoft Developer Network - [Command and Query Responsibility Segregation (CQRS) Pattern](https://msdn.microsoft.com/en-us/library/dn568103.aspx)
-9. Microsoft Developer Network. The Architecture Journal. [Using Events in Highly Distributed Architectures](https://msdn.microsoft.com/en-us/library/dd129913.aspx)
+8. Microsoft Developer Network - [Command and Query Responsibility Segregation (CQRS) Pattern](http://martinfowler.com/bliki/CQRS.html)https://msdn.microsoft.com/en-us/library/dn568103.aspx)
+9. Mircosoft Developer Network. The Architecture Journal. [Using Events in Highly Distributed Architectures](https://msdn.microsoft.com/en-us/library/dd129913.aspx)
+10. [Selecting an Event Channel for Event-Driven Integration](../service-design/selecting-an-event-channel.md)
 
 # Contributors
 
