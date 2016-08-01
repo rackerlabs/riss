@@ -116,20 +116,20 @@ For the purposes of this discussion it is important separate the idea of a *data
 
 The [NIST Big Data Interoperability Framework V1.0](http://www.nist.gov/itl/bigdata/bigdatainfo.cfm) states that:
 
-    In a volume use case, the data is often stored in the raw state in which it was produced before being cleansed and organized (sometimes referred to as extract-load-transform). The consequence of persistence of data in its raw state is that a schema or model for the data is only applied when the data is retrieved for preparation and analysis. This Big Data concept is described as schema-on-read.
+> In a volume use case, the data is often stored in the raw state in which it was produced before being cleansed and organized (sometimes referred to as extract-load-transform). The consequence of persistence of data in its raw state is that a schema or model for the data is only applied when the data is retrieved for preparation and analysis. This Big Data concept is described as schema-on-read.
 
 The term "data lake" refers to the placing of raw data into large repositories – typically Hadoop Distributed File System (HDFS), the storage system used by Hadoop – without any transformation. “Schema-on-read” means you do not need to know how you will use your data when you are storing it. This allows you to innovate quickly by asking originally unanticipated questions after storing the data.
 
 James Dixon, the founder and CTO of Pentaho, has been credited with coming up with the term. This is how he describes a data lake:
 
-    If you think of a datamart as a store of bottled water – cleansed and packaged and structured for easy consumption – the data lake is a large body of water in a more natural state. The contents of the data lake stream in from a source to fill the lake, and various users of the lake can come to examine, dive in, or take samples.”
+> If you think of a datamart as a store of bottled water – cleansed and packaged and structured for easy consumption – the data lake is a large body of water in a more natural state. The contents of the data lake stream in from a source to fill the lake, and various users of the lake can come to examine, dive in, or take samples.”
 
 Mark Jacobsohn, Senior Vice President Booz Allen Hamilton and Michael Delurey,
 Principal at Booz Allen Hamilton write in [How the Data Lake Works](https://www.boozallen.com/content/dam/boozallen/documents/Data_Lake.pdf) that:
 
-    With the conventional approach, organizations may be reluctant to add new data sources — no matter how promising — because they fear the time and expense may outweigh the possible benefit. But with the Data Lake, organizations can add new data sources with little or no risk. This is possible because of two powerful features of the Data Lake’s schema-on-read approach: all types of data can be ingested quickly and storage is inexpensive, and data can be stored in HDFS until it is ready to be analyzed.
-
-    Say an organization has 20 new potential data sources, but does not know in advance which ones, if any, might be useful. An organization using the conventional schema-on-write may be reluctant to add any of the sources. But, the Data Lake actually encourages organizations to add new data sources because the time and resources needed are significantly reduced. Organizations need not fear adding what might be useless information; in a sense, there is no useless information in the Data Lake.
+> With the conventional approach, organizations may be reluctant to add new data sources — no matter how promising — because they fear the time and expense may outweigh the possible benefit. But with the Data Lake, organizations can add new data sources with little or no risk. This is possible because of two powerful features of the Data Lake’s schema-on-read approach: all types of data can be ingested quickly and storage is inexpensive, and data can be stored in HDFS until it is ready to be analyzed.
+> 
+> Say an organization has 20 new potential data sources, but does not know in advance which ones, if any, might be useful. An organization using the conventional schema-on-write may be reluctant to add any of the sources. But, the Data Lake actually encourages organizations to add new data sources because the time and resources needed are significantly reduced. Organizations need not fear adding what might be useless information; in a sense, there is no useless information in the Data Lake.
 
 In a data lake, data can be analyzed without constraints of preconceived structure. It is therefore natural and desirable to automate the import of data into the data lake from event notifications found on event channels.
 
@@ -290,15 +290,15 @@ No, the concept of an event channel is not the same as the concept of a message 
 
 In [Messaging Patterns in Service-Oriented Architecture, Part 1](https://msdn.microsoft.com/en-us/library/aa480027.aspx), Microsoft writes that:
 
-    A message bus is a combination of a common data model, a common command set, and a messaging infrastructure to allow different heterogeneous systems to communicate through a shared set of interfaces.
-
-    A message bus can be considered as a universal connector between the various enterprise systems, and as a universal interface for client applications that wish to communicate with each other. A message bus requires that all of the applications should use the same canonical data model.
+> A message bus is a combination of a common data model, a common command set, and a messaging infrastructure to allow different heterogeneous systems to communicate through a shared set of interfaces.
+> 
+> A message bus can be considered as a universal connector between the various enterprise systems, and as a universal interface for client applications that wish to communicate with each other. A message bus requires that all of the applications should use the same canonical data model.
 
 In a [separate publication about message buses]((https://msdn.microsoft.com/en-us/library/ff647328.aspx)), Microsoft writes:
 
-    When you use a message bus, an application that sends a message no longer has individual connections to all the applications that must receive the message. Instead, the application merely passes the message to the message bus, and the message bus transports the message to all the other applications that are listening for bus messages through a shared infrastructure. Likewise, an application that receives a message no longer obtains it directly from the sender. Instead, it takes the message from the message bus. In effect, the message bus reduces the fan-out of each application from many to one.
-
-    Usually, the bus does not preserve message ordering. Internal optimizations, routing, buffering, or even the underlying transport mechanism might affect how the messages travel to the receiving applications. Therefore, the order in which messages reach each receiver is nondeterministic. Preserving the order of messages requires additional logic. This additional logic can be provided by the participating applications.
+> When you use a message bus, an application that sends a message no longer has individual connections to all the applications that must receive the message. Instead, the application merely passes the message to the message bus, and the message bus transports the message to all the other applications that are listening for bus messages through a shared infrastructure. Likewise, an application that receives a message no longer obtains it directly from the sender. Instead, it takes the message from the message bus. In effect, the message bus reduces the fan-out of each application from many to one.
+> 
+> Usually, the bus does not preserve message ordering. Internal optimizations, routing, buffering, or even the underlying transport mechanism might affect how the messages travel to the receiving applications. Therefore, the order in which messages reach each receiver is nondeterministic. Preserving the order of messages requires additional logic. This additional logic can be provided by the participating applications.
 
 That document also lists a number of liabilities associated with the message bus pattern, such as increased complexity, lowered integrability, lowered security and low tolerance for application unavailability.
 
