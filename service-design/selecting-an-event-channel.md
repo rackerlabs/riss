@@ -23,7 +23,7 @@ Choosing the right technology for the conduit through which event notifications 
 
 For additional context, please refer to the Rackspace [Approach to Event-Driven Architecture](../cookbook/approach-to-event-driven-architecture.md).
 
-Contextually, the selected integration technology should ideally conform to the [Rackspace SOA Guidelines](https://one.rackspace.com/download/attachments/49480223/RackspaceSOAGuidelines_v2.0_DRAFT1.pdf?version=1&modificationDate=1390945322000&api=v2), *Consumer-to-Contract*, and should comport with our [Approach to (service-oriented) Integration](approach-to-integration.md).
+Contextually, the selected integration technology should ideally conform to the [Rackspace SOA Guidelines](https://one.rackspace.com/download/attachments/49480223/RackspaceSOAGuidelines_v2.0_DRAFT1.pdf?version=1&modificationDate=1390945322000&api=v2), and should comport with our [Approach to (service-oriented) Integration](approach-to-integration.md).
 
 Additionally, relevant legal, compliance and policy constraints apply to the decision, such as data classification and data storage policies.
 
@@ -60,8 +60,8 @@ Evaluation criteria will vary between different business problems / architectura
 * Should accept event notifications represented using the [Atom Syndication Format](https://tools.ietf.org/html/rfc4287)
 * Should offer the ability for clients to publish or consume events in either XML or JSON, and adapt from one format to another transparently
 * Should optionally validate event notifications against a per-channel schema to ensure that producers only produce event notifications that conform to the published representation contract
-
-TODO: add something about a batch / bulk API capability
+* Should optionally provide producers with a batch / bulk API capability to allow producers to publish multiple event notifications in a single request
+* Should optionally provide consumers with a batch / bulk API capability to allow consumers to receive to multiple event notifications from a single request
 
 ## Alternatives
 
