@@ -61,6 +61,8 @@ Evaluation criteria will vary between different business problems / architectura
 * Should offer the ability for clients to publish or consume events in either XML or JSON, and adapt from one format to another transparently
 * Should optionally validate event notifications against a per-channel schema to ensure that producers only produce event notifications that conform to the published representation contract
 
+TODO: add something about a batch / bulk API capability
+
 ## Alternatives
 
 The following technologies were considered as part of objectively evaluating this decision point:
