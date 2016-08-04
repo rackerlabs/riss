@@ -65,14 +65,3 @@ REST is an architectural style, so this there's no specification to answer such 
 * Bryan Taylor
 * Mark Morga
 
-## Comments:
-
-1. Mark Morga and Bryan Taylor - I suggest adding a good practice that we only return hyperlinks for state transitions that the current user is permitted to perform.
-
-    For example, if Alice is not permitted to delete a resource, but Bob is permitted to do so, then only Bob should see a hyperlink for deleting the resource.
-
-    This would depend on including semantics about the hyperlink (i.e. differentiating a delete relationship from an update relationship for the same resource).
-
-    Thoughts?
-
-    Ben Truitt
