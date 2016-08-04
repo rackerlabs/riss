@@ -58,7 +58,7 @@ TODO
 
 # References
 
-1. [Hypermedia as the Engine of Application State (HATEOAS)](how-to-implement-hateoas.html)
+1. [Hypermedia as the Engine of Application State (HATEOAS)](how-to-implement-hateoas.md)
 
 # Contributors
 
