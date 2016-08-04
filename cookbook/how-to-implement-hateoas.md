@@ -53,6 +53,10 @@ The following are frequently asked questions whose answers are worth collecting 
 
 REST is an architectural style, so this there's no specification to answer such questions definitively, but Roy Fielding has made clear that HATEOAS is a hallmark of RESTful ness. Leonard Richardson devised a REST maturity model that defines three tiers of RESTfulness. The third tier is HATEOAS.
 
+*But what if my resource has, say, a dozen actions. Do I then have to provide a dozen links on the representation?*
+
+Yes. There is very little processing or communication overhead associated with this, and it conferrs the benefits described above. 
+
 # References
 
 1.  [REST APIs must be hypertext-driven](http://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven), Roy Fielding.
