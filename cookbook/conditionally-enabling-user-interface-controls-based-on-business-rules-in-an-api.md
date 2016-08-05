@@ -48,18 +48,38 @@ None
 
 The following are frequently asked questions whose answers are worth collecting in one place.
 
-*Can I use HTTP headers for the HATEOAS links?*
+*As a service provider, how can I use an HTTP intermediary to implement the authorization-conditioned business logic?*
 
-TODO
+Authorization business logic can be implemented in the origin service, in an HTTP intermediary within the API service boundary, or both.
+
+
+| Business Logic Concern | Appropriate for Origin Service? | Appropriate for HTTP intermediary?|
+|:--------------------------:|:---:|:---:|
+| Coarse-grained permissions | Yes<sup>1</sup> | Yes |
+| Fine-grained permissions   | Yes | Yes<sup>2</sup>  |
+| Contextual business logic  | Yes  | No<sup>3</sup>  |
+
+Notes on the table:
+
+1. In cases where you are using an HTTP intermediary such as Repose to implement coarse-grained permissions (e.g. RBAC), it is preferable to implement this concern in the intermediary as well, since it keeps the coarse-grained permission business logic cohesive and encapsulated within one place for easier maintenance and testing. However, this requires the HTTP intermediary to inspect and modify the response body to remove the HATEOAS link for responses to clients with insufficient permission. You'll need to be sure your HTTP intermediary supports this functionality.
+2. The same logic from the previous point applies for fine-grained permissions, but this will only make sense to do when your HTTP intermediary is concerned with fine-grained permissions.
+3. The HTTP intermediary is not a good place to implement contextual business logic such as logic based on resource state, since this spreads out the business logic of your API implementation and increases maintenance burden.
 
 *Instead of using HATEOAS links, what about HTTP OPTIONS verb?*
 
-TODO
+The HTTP OPTIONS verb is another way to solve the problem statement in this cookbook entry. However, we prefer the HATEOAS link approach because:
+
+1. It is aligned to "Hypermedia as the engine of application state (HATEOAS)" constraint, an aspect of the "Uniform Interface" constraint of the RESTful architectural style.
 
 # References
 
 1. [Hypermedia as the Engine of Application State (HATEOAS)](how-to-implement-hateoas.md)
+2. [Hypertext as the Engine of Application State (HATEOAS) in JSON](../representation-design/json-hateoas-links.md)
+3. [Repose HTTP Intermediary](http://www.openrepose.org/)
 
 # Contributors
 
-Ben Truitt
+- Ben Truitt
+- Hector Munoz
+- Mark Morga
+- Josh Schairbaum
