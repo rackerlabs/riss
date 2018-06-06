@@ -86,11 +86,11 @@ You are also encouraged to start a discussion by filing an [issue](https://guide
 |quality|readme||no|
 |quality|quality-standards||yes|
 |references|readme||no|
-|representaion design|readme||yes|
-|representaion design|account-and-device-references||yes|
-|representaion design|json-hateoas-links||yes|
-|representaion design|json-representations||yes|
-|representaion design|representation-design||yes|
+|representation design|readme||yes|
+|representation design|account-and-device-references||yes|
+|representation design|json-hateoas-links||yes|
+|representation design|json-representations||yes|
+|representation design|representation-design||yes|
 |resource design|readme||yes|
 |resource design|common-resource-patterns||yes|
 |resource design|pagination-design||yes|
